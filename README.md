@@ -9,11 +9,11 @@ Mijotons est une application multi-plateforme basée sur le thème de la confect
 
 <br>
 
-Nous développons cette application via le software Xamarin. <img src="https://brandslogos.com/wp-content/uploads/thumbs/xamarin-logo-vector.svg" width="65px"> 
+Nous développons cette application via le software Android Studio. <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/a9326d72465217.5be8ae1c0a8a7.png" width="150px"> 
 
 <br>
 
-Elle sera donc disponible sous <ins>Android</ins> et <ins>IOS</ins>.
+Elle sera donc disponible sous <ins>Android</ins>.
 
 <br>
 
