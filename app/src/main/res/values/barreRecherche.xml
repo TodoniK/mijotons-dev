@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigationPlacard">Mes placards</string>
+    <string name="navigationHistorique">Historique</string>
+    <string name="navigationCourses">Courses</string>
+    <string name="navigationCarte">Carte</string>
+    <string name="navigationFavoris">Favoris</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_placards"
+        android:icon="@drawable/couverts"
+        android:title="@string/navigationPlacard" />
+    <item android:id="@+id/action_historique"
+        android:title="@string/navigationHistorique"
+        android:icon="@drawable/historique" />
+    <item android:id="@+id/action_courses"
+        android:title="@string/navigationCourses"
+        android:icon="@drawable/caddie" />
+    <item android:id="@+id/action_carte"
+        android:title="@string/navigationCarte"
+        android:icon="@drawable/map" />
+    <item android:id="@+id/action_favoris"
+        android:title="@string/navigationFavoris"
+        android:icon="@drawable/coeur" />
+</menu>

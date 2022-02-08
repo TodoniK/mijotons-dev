@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menuPlacard">Choisissez vos aliments !</string>
+    <string name="defautRecherche">Recherche</string>
+    <string name="texteBoutonFruits">Fruits</string>
+    <string name="texteBoutonLait">Produits laitiers</string>
+    <string name="texteBoutonViandes">Viandes/Poissons</string>
+    <string name="texteBoutonLegumes">Légumes</string>
+    <string name="texteBoutonFini">J\'ai fini</string>
+</resources>
