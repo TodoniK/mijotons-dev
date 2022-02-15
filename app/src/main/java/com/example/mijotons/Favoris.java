@@ -1,12 +1,13 @@
 package com.example.mijotons;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 public class Favoris extends AppCompatActivity {
     Intent intent;
@@ -16,9 +17,6 @@ public class Favoris extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favoris);
-
-        //Liste recette
-        
 
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);
@@ -43,5 +41,6 @@ public class Favoris extends AppCompatActivity {
             }
             return true;
         });
+
     }
 }

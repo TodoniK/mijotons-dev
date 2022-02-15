@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +8,51 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Courses">
+
+    <TextView
+        android:id="@+id/tv_nomMenuCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center|center_horizontal"
+        android:textColor="@color/white"
+        android:background="@color/vert"
+        android:text="@string/menuCourses" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:gravity="center|center_horizontal"
+        android:hint="@string/defautRecherche"
+        android:autofillHints="15"
+        android:inputType="" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <CheckBox
+            android:id="@+id/toutSelectionner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tout séléctionner" />
+
+        <ImageButton
+            android:id="@+id/ajouterAliment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:background="@color/white"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -17,52 +63,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_nomMenuCourse"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:gravity="center|center_horizontal"
-                android:textColor="@color/white"
-                android:background="@color/vert"
-                android:text="@string/menuCourses" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="75dp"
-                android:layout_marginEnd="75dp"
-                android:gravity="center|center_horizontal"
-                android:hint="@string/defautRecherche"
-                android:autofillHints="15"
-                android:inputType="" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                >
-
-                <CheckBox
-                    android:id="@+id/toutSelectionner"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Tout séléctionner" />
-
-                <ImageButton
-                    android:id="@+id/ajouterAliment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="230dp"
-                    android:background="@color/white"
-                    app:srcCompat="@android:drawable/ic_input_add" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
