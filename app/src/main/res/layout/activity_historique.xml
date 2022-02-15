@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<!-- LAYOUT PRINCIPALE -->
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -28,15 +30,175 @@
         android:autofillHints="15"
         android:inputType="" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigationBar"
+
+    <!-- _________LAYOUT HEADER + CONTENUE DE LA PAGE___________ -->
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/vert"
-        android:foregroundTint="#FFFFFF"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="#FFFFFF"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/navigation_item" />
-</LinearLayout>
+        >
+        <!-- _______HEADER_____________ -->
+
+        <TextView
+            android:id="@+id/tv_nomMenuPlacards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+            android:text="@string/menuHistorique"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:background="@color/vert"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:autofillHints="15"
+            android:gravity="center|center_horizontal"
+            android:hint="@string/defautRecherche"
+            android:inputType="" />
+
+        <!-- ____________FIN DU HEADER________________________ -->
+
+
+
+        <!-- SCROLL VIEW QUI RETOURNE LES RECETTES -->
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/b_recette1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/vert"
+                    android:drawableStart="@drawable/produits_laitiers"
+                    android:drawableTint="@color/white"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/texteBoutonLait" />
+
+                <Button
+                    android:id="@+id/b_recette2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/vert"
+                    android:drawableStart="@drawable/produits_laitiers"
+                    android:drawableTint="@color/white"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/texteBoutonLait" />
+
+                <Button
+                    android:id="@+id/b_recette3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/vert"
+                    android:drawableStart="@drawable/produits_laitiers"
+                    android:drawableTint="@color/white"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/texteBoutonLait" />
+
+                <Button
+                    android:id="@+id/b_recette4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/vert"
+                    android:drawableStart="@drawable/produits_laitiers"
+                    android:drawableTint="@color/white"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/texteBoutonLait" />
+
+                <Button
+                    android:id="@+id/b_recette5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/vert"
+                    android:drawableStart="@drawable/produits_laitiers"
+                    android:drawableTint="@color/white"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/texteBoutonLait" />
+
+                <Button
+                    android:id="@+id/b_recette6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/vert"
+                    android:drawableStart="@drawable/produits_laitiers"
+                    android:drawableTint="@color/white"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/texteBoutonLait" />
+
+                <Button
+                    android:id="@+id/b_recette7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/vert"
+                    android:drawableStart="@drawable/produits_laitiers"
+                    android:drawableTint="@color/white"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/texteBoutonLait" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- _______________FIN SCROLL BAR__________________ -->
+
+    <!-- _______________FOOTER__________________ -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vert"
+            android:foregroundTint="#FFFFFF"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="#FFFFFF"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation_item" />
+
+        <!--____________ FIN FOOTER_________________-->
+
+    </LinearLayout>
+</RelativeLayout>
+
