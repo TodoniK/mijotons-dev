@@ -1,11 +1,15 @@
 package com.example.mijotons;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Carte extends AppCompatActivity {
@@ -16,6 +20,9 @@ public class Carte extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carte);
+
+        //Carte
+
 
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);

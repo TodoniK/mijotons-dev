@@ -16,7 +16,7 @@
         android:gravity="center|center_horizontal"
         android:text="@string/menuPlacard"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="25dp"
         android:background="@color/vert"
         />
 

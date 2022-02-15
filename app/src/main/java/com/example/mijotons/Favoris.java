@@ -17,6 +17,9 @@ public class Favoris extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favoris);
 
+        //Liste recette
+        
+
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);
         mBottomNavigationView.setOnItemSelectedListener(item-> {

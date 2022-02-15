@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/vert"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Carte">
 
@@ -13,10 +12,12 @@
         android:id="@+id/tv_nomMenuCarte"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:gravity="center|center_horizontal"
         android:textColor="@color/white"
+        android:background="@color/vert"
+        android:textSize="25dp"
         android:text="@string/menuCarte" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationBar"

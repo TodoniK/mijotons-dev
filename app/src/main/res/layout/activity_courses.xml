@@ -5,28 +5,308 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/vert"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Courses">
 
-    <TextView
-        android:id="@+id/tv_nomMenuCourses"
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center|center_horizontal"
-        android:textColor="@color/white"
-        android:text="@string/menuCourses" />
+        android:orientation="vertical">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigationBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/vert"
-        android:foregroundTint="#FFFFFF"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="#FFFFFF"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/navigation_item" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nomMenuCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:gravity="center|center_horizontal"
+                android:textColor="@color/white"
+                android:background="@color/vert"
+                android:text="@string/menuCourses" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginEnd="75dp"
+                android:gravity="center|center_horizontal"
+                android:hint="@string/defautRecherche"
+                android:autofillHints="15"
+                android:inputType="" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/toutSelectionner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tout séléctionner" />
+
+                <ImageButton
+                    android:id="@+id/ajouterAliment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="230dp"
+                    android:background="@color/white"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/aliment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tomates cerises" />
+
+                <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                                                     />
+
+                <Spinner
+                    android:id="@+id/unite1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/aliment2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Creme fraiche" />
+
+                <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/unite2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/aliment3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Curry" />
+
+                <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/unite3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/aliment4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Sel" />
+
+                <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/unite4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/aliment5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pomme de terres" />
+
+                <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/unite5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/aliment6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pâtes" />
+
+                <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/unite6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/aliment7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Haricots verts" />
+
+                <EditText
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/unite7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/supprimerSelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Supprimer la séléction"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigationBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/vert"
+                android:foregroundTint="#FFFFFF"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="#FFFFFF"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/navigation_item" />
 
 </LinearLayout>

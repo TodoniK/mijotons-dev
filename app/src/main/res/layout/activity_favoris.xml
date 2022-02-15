@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/vert"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Favoris">
 
@@ -13,10 +12,35 @@
         android:id="@+id/tv_nomMenuFavoris"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:gravity="center|center_horizontal"
         android:textColor="@color/white"
+        android:background="@color/vert"
+        android:textSize="25dp"
         android:text="@string/menuFavoris" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:gravity="center|center_horizontal"
+        android:hint="@string/defautRecherche"
+        android:autofillHints="15"
+        android:inputType="" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/simpleListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="abhiandroid.com.listexample.MainActivity">
+        </ListView>
+
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationBar"
@@ -24,6 +48,7 @@
         android:layout_height="wrap_content"
         android:background="@color/vert"
         android:foregroundTint="#FFFFFF"
+        android:layout_gravity="bottom"
         app:itemIconTint="@color/white"
         app:itemTextColor="#FFFFFF"
         app:labelVisibilityMode="labeled"
