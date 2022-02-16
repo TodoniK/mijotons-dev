@@ -8,12 +8,18 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Carte extends AppCompatActivity {
+public class Carte extends AppCompatActivity implements OnMapReadyCallback{
     Intent intent;
+
+    MapView carte;
+    GoogleMap map;
 
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -22,6 +28,9 @@ public class Carte extends AppCompatActivity {
         setContentView(R.layout.activity_carte);
 
         //Carte
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+
+        mapFragment.getMapAsync(this);
 
 
         //Navigation
@@ -47,5 +56,10 @@ public class Carte extends AppCompatActivity {
             }
             return true;
         });
+    }
+
+    @Override
+    public void onMapReady(@NonNull GoogleMap googleMap) {
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
     }
 }

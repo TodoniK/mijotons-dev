@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- LAYOUT PRINCIPALE -->
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -75,8 +75,8 @@
 
 
         <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fillViewport="true"
             android:orientation="vertical">
 
@@ -84,7 +84,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
 
 
                 <View
@@ -95,7 +94,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    >
 
                     <CheckBox
                         android:id="@+id/produit1"
@@ -384,58 +384,49 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <View
-                    android:id="@+id/diviseurBoutonBas"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <Button
-                        android:id="@+id/buttonSuppressionSelect"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Supprimer la séléction"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
         </ScrollView>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Supprimer la séléction"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#4E342E"
+            tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigationBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/vert"
+                android:foregroundTint="#FFFFFF"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="#FFFFFF"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/navigation_item" />
+
+            <!--____________ FIN FOOTER_________________-->
+
+        </LinearLayout>
     </LinearLayout>
 
     <!-- _______________FIN SCROLL BAR__________________ -->
 
     <!-- _______________FOOTER__________________ -->
-    <LinearLayout
-        android:id="@+id/footer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical" >
 
-
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigationBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/vert"
-            android:foregroundTint="#FFFFFF"
-            app:itemIconTint="@color/white"
-            app:itemTextColor="#FFFFFF"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/navigation_item" />
-
-        <!--____________ FIN FOOTER_________________-->
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</LinearLayout>
