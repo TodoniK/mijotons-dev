@@ -1,42 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_nomMenuPlacards"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/vert"
         android:gravity="center|center_horizontal"
         android:text="@string/menuPlacard"
         android:textColor="@color/white"
-        android:textSize="25dp"
-        android:background="@color/vert"
-        />
+        android:textSize="25sp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginEnd="75dp"
+        android:layout_marginStart="75sp"
+        android:layout_marginEnd="75sp"
         android:gravity="center|center_horizontal"
         android:hint="@string/defautRecherche"
         android:autofillHints="15"
         android:inputType="" />
 
+
     <Button
         android:id="@+id/b_Fruits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginVertical="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
         android:background="@color/orangeFruit"
         android:text="@string/texteBoutonFruits"
         android:textColor="@color/white"
@@ -47,9 +64,9 @@
         android:id="@+id/b_Lait"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginVertical="10sp"
         android:background="@color/bleuLait"
         android:text="@string/texteBoutonLait"
         android:drawableStart="@drawable/produits_laitiers"
@@ -60,9 +77,9 @@
         android:id="@+id/b_Viandes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginVertical="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
         android:background="@color/rougeViande"
         android:drawableStart="@drawable/viande"
         android:drawableTint="@color/white"
@@ -72,11 +89,11 @@
         android:id="@+id/b_Legumes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
         android:background="@color/vertLegume"
         android:text="@string/texteBoutonLegumes"
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="10sp"
         android:drawableStart="@drawable/legumes"
         android:drawableTint="@color/white"
         />
@@ -84,22 +101,38 @@
     <Button
         android:id="@+id/b_terminerChoixPlacards"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="100dp"
+        android:layout_width="100sp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="150sp"
         android:background="@color/transparent"
         android:text="@string/texteBoutonFini" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigationBar"
-        android:layout_width="match_parent"
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/vert"
-        android:foregroundTint="#FFFFFF"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="#FFFFFF"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/navigation_item" />
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
 
 
-</LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vert"
+            android:foregroundTint="#FFFFFF"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="#FFFFFF"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation_item" />
+
+        <!--____________ FIN FOOTER_________________-->
+
+    </LinearLayout>
+
+</RelativeLayout>

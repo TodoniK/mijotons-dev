@@ -10,26 +10,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Historique">
 
-    <TextView
-        android:id="@+id/tv_nomMenuHistorique"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|center_horizontal"
-        android:textColor="@color/white"
-        android:background="@color/vert"
-        android:textSize="25dp"
-        android:text="@string/menuHistorique" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginEnd="75dp"
-        android:gravity="center|center_horizontal"
-        android:hint="@string/defautRecherche"
-        android:autofillHints="15"
-        android:inputType="" />
-
 
     <!-- _________LAYOUT HEADER + CONTENUE DE LA PAGE___________ -->
     <LinearLayout
@@ -40,7 +20,7 @@
         <!-- _______HEADER_____________ -->
 
         <TextView
-            android:id="@+id/tv_nomMenuPlacards"
+            android:id="@+id/tv_nomMenuHistorique"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|center_horizontal"
