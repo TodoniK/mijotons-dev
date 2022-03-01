@@ -2,12 +2,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
 
     <TextView
         android:id="@+id/tv_nomMenuPlacards"
@@ -20,75 +19,140 @@
         android:background="@color/vert"
         />
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginEnd="75dp"
-        android:gravity="center|center_horizontal"
-        android:hint="@string/defautRecherche"
-        android:autofillHints="15"
-        android:inputType="" />
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="100">
 
-    <Button
-        android:id="@+id/b_Fruits"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/orangeFruit"
-        android:text="@string/texteBoutonFruits"
-        android:textColor="@color/white"
-        android:drawableStart="@drawable/fruits"
-        android:drawableTint="@color/white" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_weight="10"
+            android:gravity="center|center_horizontal"
+            android:hint="@string/defautRecherche"
+            android:autofillHints="15"
+            android:inputType="" />
 
-    <Button
-        android:id="@+id/b_Lait"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginVertical="10dp"
-        android:background="@color/bleuLait"
-        android:text="@string/texteBoutonLait"
-        android:drawableStart="@drawable/produits_laitiers"
-        android:drawableTint="@color/white"
-        />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            >
 
-    <Button
-        android:id="@+id/b_Viandes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/rougeViande"
-        android:drawableStart="@drawable/viande"
-        android:drawableTint="@color/white"
-        android:text="@string/texteBoutonViandes" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="100"
+                >
+                <Button
+                android:id="@+id/b_fruits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="25"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@color/orangeFruit"
+                android:text="@string/texteBoutonFruits"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/fruits"
+                android:drawableTint="@color/white" />
 
-    <Button
-        android:id="@+id/b_Legumes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/vertLegume"
-        android:text="@string/texteBoutonLegumes"
-        android:layout_marginVertical="10dp"
-        android:drawableStart="@drawable/legumes"
-        android:drawableTint="@color/white"
-        />
+                <LinearLayout
+                    android:id="@+id/ll_fruits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/b_terminerChoixPlacards"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:background="@color/transparent"
-        android:text="@string/texteBoutonFini" />
+                </LinearLayout>
+            <Button
+            android:id="@+id/b_lait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="25"
+            android:layout_marginVertical="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/bleuLait"
+            android:text="@string/texteBoutonLait"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/produits_laitiers"
+            android:drawableTint="@color/white"
+            />
+                <LinearLayout
+                    android:id="@+id/ll_lait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            <Button
+            android:id="@+id/b_viandes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="25"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/rougeViande"
+            android:drawableStart="@drawable/viande"
+            android:drawableTint="@color/white"
+            android:text="@string/texteBoutonViandes"
+            android:textColor="@color/white"/>
+                <LinearLayout
+                    android:id="@+id/ll_viandes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <Button
+            android:id="@+id/b_legumes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="25"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginVertical="10dp"
+            android:background="@color/vertLegume"
+            android:text="@string/texteBoutonLegumes"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/legumes"
+            android:drawableTint="@color/white"
+            />
+                <LinearLayout
+                    android:id="@+id/ll_legumes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/b_terminerChoixPlacards"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:background="@color/transparent"
+            android:text="@string/texteBoutonFini" />
+
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationBar"

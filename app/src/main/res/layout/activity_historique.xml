@@ -28,4 +28,5 @@
         app:itemTextColor="#FFFFFF"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/navigation_item" />
+
 </LinearLayout>
