@@ -27,11 +27,6 @@ public class Carte extends AppCompatActivity implements OnMapReadyCallback{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carte);
 
-        //Carte
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-
-        mapFragment.getMapAsync(this);
-
 
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);
@@ -60,6 +55,6 @@ public class Carte extends AppCompatActivity implements OnMapReadyCallback{
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+
     }
 }
