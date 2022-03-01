@@ -1,12 +1,13 @@
 package com.example.mijotons;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 public class Favoris extends AppCompatActivity {
     Intent intent;
@@ -40,5 +41,6 @@ public class Favoris extends AppCompatActivity {
             }
             return true;
         });
+
     }
 }
