@@ -1,0 +1,9 @@
+{
+ "1":{
+	 "Nom":"Pâte Bolognaise",
+	 "Aliments":["Pâtes","Tomate","viande hachées"],
+	 "Quantite":["200g","2","150g"],
+	 "Image":"pateBolognaise.png",
+	 "Etape":"1.Cuire les pâtes \n 2.Cuire la viande avec les tomates \n 3.Mélanger" 
+ }
+}

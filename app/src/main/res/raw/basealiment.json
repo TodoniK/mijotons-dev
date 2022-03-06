@@ -1,0 +1,6 @@
+{
+ "Fruits":["Abricot","Ananas","Banane","Cerise","Fraise","Figue","Myrtille"],
+ "Produits laitiers":["Yaourt","Fromage","Creme fraiche","Lait","Beurre"],
+ "ViandesPoissons":["Poulet","Boeuf","Agneau","Lapin","Dinde","Porc","Brochet","Anguille","Carpe","Turbo","Moules","Crevettes","Huitres","Langoustes"],
+ "Legumes":["Ail","Artichaut","Asperge","Aubergine","Avocat","Betterave","Brocoli"]
+}

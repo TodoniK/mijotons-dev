@@ -16,7 +16,7 @@
         android:textColor="@color/white"
         android:background="@color/vert"
         android:textSize="25dp"
-        android:text="@string/menuCarte" />
+        android:text="Menu Carte" />
 
 
     <com.google.android.gms.maps.MapView

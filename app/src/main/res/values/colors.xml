@@ -9,8 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="vert">#49B95B</color>
     <color name="orangeFruit">#F5A44D</color>
+    <color name="orangeFruitClair">#F9CB9C</color>
     <color name="bleuLait">#8BC8DB</color>
+    <color name="bleuLaitClair">#E6F4F1</color>
     <color name="rougeViande">#FA7470</color>
+    <color name="rougeViandeClair">#FFE4DF</color>
     <color name="vertLegume">#A7E0A5</color>
+    <color name="vertLegumeClair">#DBF9D8</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>

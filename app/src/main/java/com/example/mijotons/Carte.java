@@ -15,13 +15,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Carte extends AppCompatActivity implements OnMapReadyCallback{
+public class Carte extends AppCompatActivity {
     Intent intent;
 
-    MapView carte;
-    GoogleMap map;
-
-    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +26,8 @@ public class Carte extends AppCompatActivity implements OnMapReadyCallback{
 
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);
-        mBottomNavigationView.setOnItemSelectedListener(item-> {
-            switch (item.getItemId()){
+        mBottomNavigationView.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
                 case R.id.action_placards:
                     intent = new Intent(this, MainActivity.class);
                     startActivity(intent);
@@ -51,10 +47,5 @@ public class Carte extends AppCompatActivity implements OnMapReadyCallback{
             }
             return true;
         });
-    }
-
-    @Override
-    public void onMapReady(@NonNull GoogleMap googleMap) {
-
     }
 }
