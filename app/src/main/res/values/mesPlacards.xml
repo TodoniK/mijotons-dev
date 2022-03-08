@@ -7,4 +7,5 @@
     <string name="texteBoutonViandes">Viandes/Poissons</string>
     <string name="texteBoutonLegumes">Légumes</string>
     <string name="texteBoutonFini">J\'ai fini</string>
+    <string name="texteBoutonAutre">Autre</string>
 </resources>

@@ -19,6 +19,7 @@ public class aliment {
     public static String[] nomViandes;
     public static String[] nomLegumes;
     public static String[] nomLait;
+    public static String[] nomAutre;
 
     public static ArrayList<String> cocherAliment = new ArrayList<>();
 
@@ -26,6 +27,8 @@ public class aliment {
     public static ArrayList<CheckBox> lait = new ArrayList<>();
     public static ArrayList<CheckBox> viandes = new ArrayList<>();
     public static ArrayList<CheckBox> legumes = new ArrayList<>();
+    public static ArrayList<CheckBox> autre = new ArrayList<>();
+
 
     public static void init(Context context) throws JSONException, IOException {
         if(fruits.size() == 0){
@@ -56,6 +59,14 @@ public class aliment {
                 check.setText(nomLait);
                 lait.add(check);
             }
+
+            nomAutre = readJson.readBaseAliment(context,"Autres");
+            for (String nomAutre : aliment.nomAutre) {
+                CheckBox check = new CheckBox(context);
+                check.setText(nomAutre);
+                autre.add(check);
+            }
+
         }
 
     }
@@ -88,6 +99,13 @@ public class aliment {
         {
             if(lait.get(i).isChecked()){
                 cocherAliment.add(lait.get(i).getText().toString());
+            }
+        }
+
+        for(int i=0;i<autre.size();i++)
+        {
+            if(autre.get(i).isChecked()){
+                cocherAliment.add(autre.get(i).getText().toString());
             }
         }
     }
@@ -124,6 +142,15 @@ public class aliment {
                 check.setChecked(true);
             }
             legumes.set(i,check);
+        }
+
+        for(int i = 0 ; i<nomAutre.length;i++){
+            CheckBox check = new CheckBox(context);
+            check.setText(nomAutre[i]);
+            if(autre.get(i).isChecked()){
+                check.setChecked(true);
+            }
+            autre.set(i,check);
         }
     }
 

@@ -16,5 +16,7 @@
     <color name="rougeViandeClair">#FFE4DF</color>
     <color name="vertLegume">#A7E0A5</color>
     <color name="vertLegumeClair">#DBF9D8</color>
+    <color name="grisAutre">#646464</color>
+    <color name="grisAutreClair">#969696</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>

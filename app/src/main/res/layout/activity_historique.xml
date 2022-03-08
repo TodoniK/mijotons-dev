@@ -13,22 +13,20 @@
 
     <!-- _________LAYOUT HEADER + CONTENUE DE LA PAGE___________ -->
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:orientation="vertical">
         <!-- _______HEADER_____________ -->
 
         <TextView
             android:id="@+id/tv_nomMenuHistorique"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/vert"
             android:gravity="center|center_horizontal"
             android:text="@string/menuHistorique"
             android:textColor="@color/white"
-            android:textSize="30sp"
-            android:background="@color/vert"
-            />
+            android:textSize="30sp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -43,7 +41,6 @@
         <!-- ____________FIN DU HEADER________________________ -->
 
 
-
         <!-- SCROLL VIEW QUI RETOURNE LES RECETTES -->
 
 
@@ -54,87 +51,29 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/ll_historique"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/b_recette1"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/vert"
-                    android:drawableStart="@drawable/produits_laitiers"
-                    android:drawableTint="@color/white"
-                    android:gravity="top|center_horizontal"
-                    android:text="@string/texteBoutonLait" />
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70"
+                        android:gravity="center_horizontal"
+                        android:text="Titre\n\n\n -200g de pâte   -100g de creme fraich\n -100g de jambon  -sel/poivre"/>
 
-                <Button
-                    android:id="@+id/b_recette2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/vert"
-                    android:drawableStart="@drawable/produits_laitiers"
-                    android:drawableTint="@color/white"
-                    android:gravity="top|center_horizontal"
-                    android:text="@string/texteBoutonLait" />
-
-                <Button
-                    android:id="@+id/b_recette3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/vert"
-                    android:drawableStart="@drawable/produits_laitiers"
-                    android:drawableTint="@color/white"
-                    android:gravity="top|center_horizontal"
-                    android:text="@string/texteBoutonLait" />
-
-                <Button
-                    android:id="@+id/b_recette4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/vert"
-                    android:drawableStart="@drawable/produits_laitiers"
-                    android:drawableTint="@color/white"
-                    android:gravity="top|center_horizontal"
-                    android:text="@string/texteBoutonLait" />
-
-                <Button
-                    android:id="@+id/b_recette5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/vert"
-                    android:drawableStart="@drawable/produits_laitiers"
-                    android:drawableTint="@color/white"
-                    android:gravity="top|center_horizontal"
-                    android:text="@string/texteBoutonLait" />
-
-                <Button
-                    android:id="@+id/b_recette6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/vert"
-                    android:drawableStart="@drawable/produits_laitiers"
-                    android:drawableTint="@color/white"
-                    android:gravity="top|center_horizontal"
-                    android:text="@string/texteBoutonLait" />
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/b_recette7"
@@ -148,8 +87,6 @@
                     android:drawableTint="@color/white"
                     android:gravity="top|center_horizontal"
                     android:text="@string/texteBoutonLait" />
-
-
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

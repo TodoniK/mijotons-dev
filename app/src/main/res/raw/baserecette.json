@@ -17,14 +17,14 @@
 		"Nom":"Pâtes Pesto",
 		"Aliments":["Pâtes","Basilic","Ail","Huile"],
 		"Quantite":["200g","30g","20g","3cl"],
-		"Image":"patesPesto.png",
+		"Image":"patespesto",
 		"Etape":"1.Cuire les pâtes \n 2.Mixer et mélanger basilic, ail et huile \n 3.Melanger les pates avec la mixture."
 	},
 	"4":{
 		"Nom":"Pâtes au saumon et aux champignons",
 		"Aliments":["Pâtes","Champignons","Oignon","Saumon","Yaourt","Herbe de Provence","Gruyère"],
 		"Quantite":["200g","4","1/2","4 tranches","1","quelques","100g"],
-		"Image":"patesSaumonChampignon.png",
+		"Image":"patessaumonchampignon",
 		"Etape":"1.Découper l'oignon en petit dés et les champignons aussi \n 2.Les faire les revenir à la poêle. En parallèle faire chauffer l'eau pour les pâtes. \n 3.Une fois les oignons et champignons cuits, rajoutez y le gruyère le yaourt avec des herbes de Provence ainsi que le saumon coupé en petits morceaux. \n 4.Baisser le feux pour tenir le tout au chaud. Une fois que l'eau est chaude, plongez-y les pâtes ( 2-3 minutes). Une fois les pâtes prêtes, mélangez le tout dans une assiette."
 
 	},
@@ -32,140 +32,140 @@
 		"Nom":"Wrap frais au jambon",
 		"Aliments":["Wrap","Jambon","Fromage frais","Salade"],
 		"Quantite":["1","1 tranche","150g","100g"],
-		"Image":"wrapJambon.png",
+		"Image":"wrapjambon",
 		"Etape":"1.Etaler le wrap \n 2.Etaler le fromage sur le wrap \n 3.Etaler la salade par dessus le fromage \n 4.Enrouler le wrap"
 	},
 	"6":{
 		"Nom":"Tartine à l'avocat et au fromage frais",
 		"Aliments":["Avocat","Citron","Fromage frais","Pain"],
 		"Quantite":["1","1","150g","100g"],
-		"Image":"tartineAvocatFromage.png",
+		"Image":"tartineavocatfromage",
 		"Etape":"1.Mixer avocat et fromage frais \n 2.Ajouter du jus de citron à la mixture \n 3.Tartiner la mixture sur le pain grillé"
 	},
 	"7":{
 		"Nom":"Roulés façon pain perdu au nutella",
 		"Aliments":["Lait","Oeuf","Chocolat","Sucre","Pain","Huile"],
 		"Quantite":["50cl","1","150g","100g","1","10cl"],
-		"Image":"painPerduNutella.png",
+		"Image":"painperdunutella",
 		"Etape":"1.Découper la croute du pain \n 2.Applatir le pain avec un rouleau \n 3.Tartiner le pain avec le chocolat fondu \n 4.Mélanger l'oeuf avec du lait dans un plat \n 5.Tremper les roulés dans la mixture \n 6.Faire frire les roulés"
 	},
 	"8":{
 		"Nom":"Rosti patates douce, carottes et citrouilles",
 		"Aliments":["Oignon","Carotte","Potiron","Patate douce","Oeuf"],
 		"Quantite":["4","2","100g","1","2"],
-		"Image":"rostiPatateDouce.png",
+		"Image":"rostipatatedouce",
 		"Etape":"1.Ciselez les oignons \n 2.Pelez et râpez la patate douce et le potiron, les carottes. \n 3.Ajouter les deux oeufs aux autres ingrédients \n 4.Saupoudrer des epices que vous souhaitez \n 5.Melanger et former des petites galettes \n 6.Les faire cuire à la poêle"
 	},
 	"9":{
 		"Nom":"Baggels au saumon fumé et fromage à l'ail",
 		"Aliments":["Saumon","Fromage frais","Pain","Citron","Salade"],
 		"Quantite":["150gr","150g","4","1","1"],
-		"Image":"baggelsSaumonFromage.png",
+		"Image":"baggelssaumonfromage",
 		"Etape":"1.Découper les baggels en deux et faites chauffer au grille-pain. \n 2.Tartiner le fromage sur les 2 côtés du baggels \n 3.Poser des tranches de saumon et mettez quelque gouttes de citron par dessus \n 4.Enchaînez avec la salade et autre garniture de votre choix"
 	},
 	"10":{
 		"Nom":"Concombre à la crème",
 		"Aliments":["Concombre","Fromage frais","Citron"],
 		"Quantite":["1","150g","1"],
-		"Image":"concombreCreme.png",
+		"Image":"concombrecreme",
 		"Etape":"1.Peler et couper le concombre en rondelles. \n 2.Pressez le jus d'un citron \n 3.Mettre les rondelles de concombre dans un plat, ajouter le fromage, du sel et du poivre, autant de ciboulette que vous le désirez."
 	},
 	"11":{
 		"Nom":"Oeufs brouillés au chèvre",
 		"Aliments":["Oeuf","Fromage chevre","Lait","Beurre"],
 		"Quantite":["12","Une buche","6 cuillères à soupe","1 noix"],
-		"Image":"oeufsBrouilleChevre.png",
+		"Image":"oeufsbrouillechevre",
 		"Etape":"1.Dans une terrine, cassez les œufs et battez-les en omelette. Ajoutez le lait, le beurre fondu tiédi, salez et poivrez. Émiettez le fromage de chèvre et ajoutez-le dans la préparation. Mélangez. \n 2.Dans une poêle, faites fondre le beurre et versez les œufs au chèvre. Laissez cuire sur feu le plus doux possible en remuant sans cesse avec une cuillère ou une spatule en bois tout le temps de la cuisson. \n 3. Retirez du feu lorsque les œufs ont une consistance crémeuse (pas trop sèche). \n 4.Saupoudrez d'herbes selon vos goûts (thym, ciboulette, herbe de Provence...)"
 	},
 	"12":{
 		"Nom":"Pancakes",
 		"Aliments":["Banane","Oeuf","Sucre"],
 		"Quantite":["1","1","50g"],
-		"Image":"pancakes.png",
+		"Image":"pancakes",
 		"Etape":"1.Écraser votre banane dans un bol. \n 2.Ajouter l’œuf et battre. \n 3. Ajouter le sucre \n 4.Mettre de l'huile dans la poêle et faire cuire les pancakes."
 	},
 	"13":{
 		"Nom":"Crêpe Jambon Fromage",
 		"Aliments":["Oeuf","Jambon","Fromage","Huile"],
 		"Quantite":["1","1","2 tranches","10 cl"],
-		"Image":"crepeJambonFromage.png",
+		"Image":"crepejambonfromage",
 		"Etape":"1.Dans un bol, fouettez l’œuf à l'aide d'une fourchette. Salez, poivrez. \n 2.Faites chauffer (de préférence dans une grande poêle) un filet d'huile d'olive et versez l’œuf battu de façon à faire une omelette très fine. \n 3. Une fois la première face cuite, retournez à l'aide d'une spatule. \n 4.Déposez la tranche de jambon puis au centre, les tranches de fromage. \n 5.Roulez la crêpe et continuez à faire cuire jusqu'à ce que le fromage soit bien fondant."
 	},
 	"14":{
 		"Nom":"Poulet au curry",
 		"Aliments":["Riz","Huile","Champignons","Persil","Oignon","Poulet","Curry","Creme fraiche"],
 		"Quantite":["10 cl","50g","une pincée","1","6 blancs","10g","20cl"],
-		"Image":"pouletCurry.png",
+		"Image":"pouletcurry",
 		"Etape":"1.Couper en petit dés les champignons, l'oignon et le poulet. Ajouter le persil et l'huile. Ajouter le curry. Mélanger. \n 2.Mettre le tout à cuire. \n 3. Une fois cuit, a feu doux, rajouter la creme fraiche. \n 4.Faire cuire le riz, puis servir."
 	},
 	"15":{
 		"Nom":"Salade de Pommes de Terre",
 		"Aliments":["Pommes de terre","Tomate cerise","Fromage","Jambon","Huile","Persil"],
 		"Quantite":["2","4","100g","2 tranches","10cl","10g"],
-		"Image":"saladePommeDeTerre.png",
+		"Image":"saladepommedeterre",
 		"Etape":"1.Faire cuire les pommes de terre à l'eau \n 2.Couper les tomates cerises, le fromage, le jambon et le persil. Ajouter de l'huile et mélanger \n 3. Une fois les pommes de terre cuites, les découper en petit dés et ajouter la mixture."
 	},
 	"16":{
 		"Nom":"Pâtes au saumon fumé et petits poids",
 		"Aliments":["Saumon","Pâtes","Creme fraiche","Petits poids"],
 		"Quantite":["2 tranches","200g","100g","1 conserve"],
-		"Image":"patesSaumonPetitsPoids.png",
+		"Image":"patessaumonpetitspoids",
 		"Etape":"1.Faire cuire les pâtes et les petits poids. \n 2.Couper le saumon en fines lanières. \n 3. Egouter les pâtes et les petits poids. \n 4. Mélanger les 3 ingrédients en ajoutant de la crème fraiche, sel et poivre."
 	},
 	"17":{
 		"Nom":"Tacos saucisses",
 		"Aliments":["Saucisses","Wrap","Creme fraiche"],
 		"Quantite":["4","4","200g"],
-		"Image":"tacosSaucisses.png",
+		"Image":"tacossaucisses",
 		"Etape":"1.Etaler la creme fraiche sur un wrap. \n 2.Faire cuire les saucisses \n 3. Enrouler la saucisse autour du wrap."
 	},
 	"18":{
 		"Nom":"Jambon Monaco",
 		"Aliments":["Jambon","Tomate","Fromage"],
 		"Quantite":["2 tranches","2","100g"],
-		"Image":"jambonMonaco.png",
+		"Image":"jambonmonaco",
 		"Etape":"1.Decouper les tomates en fines tranches \n 2.Etaler la tranches de jambon dans la poele et y ajouter quelques tranches de tomates. \n 3. Ajouter le fromage râpé par dessus et replier la tranche de jambon sur elle-même puis laisser cuire."
 	},
 	"19":{
 		"Nom":"Poulet tandoori",
 		"Aliments":["Poulet","Citron","Yaourt"],
 		"Quantite":["3 escalopes","1","1"],
-		"Image":"pouletTandoori.png",
+		"Image":"poulettandoori",
 		"Etape":"1.Couper les escalopes en morceaux et les mettre dans un plat. Y ajouter la cuillère de moutarde, le jus de citron et les épices. Enfin, mettre le yaourt et tout mélanger. \n 2.Couvrir le tout de film alimentaire et laisser mariner 1 à 2h OU faire cuire de suite dans une poêle avec un peu d'huile pendant 4 à 5mn."
 	},
 	"20":{
 		"Nom":"Omelette jambon champignons fromage",
 		"Aliments":["Oeuf","Jambon","Fromage","Champignons"],
 		"Quantite":["2","1 tranche","50g","50g"],
-		"Image":"omeletteChampignonFromage.png",
+		"Image":"omelettechampignonfromage",
 		"Etape":"1.Dans une poêle anti-adhésive faire rêveur les champignons émincés. \n 2.Ajouter la tranche de jambon coupée en lamelle. \n 3.Dans un bol, fouetter les œufs avec le fromage râpé. \n 4.Ajouter ce mélange dans la poêle et laisser cuire quelques minutes. \n 5.Servir avec une salade verte par exemple"
 	},
 	"21":{
 		"Nom":"Concombre surprise",
 		"Aliments":["Concombre","Jambon","Creme fraiche","Salade"],
 		"Quantite":["1 gros","4 tranches","1 pot","50g"],
-		"Image":"concombreSurprise.png",
+		"Image":"concombresurprise",
 		"Etape":"1.Rincez le concombre et séchez-le. Coupez-le en 4 tronçons de taille identique. \n 2.Coupez chaque tronçon en deux et videz les pépins à l'aide d'une petite cuillère. \n 3.Garnissez chaque demi concombre d'une demi tranche de jambon et remplissez de fromage à l'aide d'une cuillère. \n 4.Répétez l'opération pour toutes les moitiés et refermez les tronçons pour former un sandwich. \n 5.Déposez-le sur une assiette de service et ajoutez un peu de mâche avec une sauce de salade."
 	},
 	"22":{
 		"Nom":"Quesadillas",
 		"Aliments":["Wrap","Poulet","Creme fraiche","Fromage","Huile"],
 		"Quantite":["1 galette","4 blancs","100g","100g","10cl"],
-		"Image":"quesadillas.png",
+		"Image":"quesadillas",
 		"Etape":"1.Couper le poulet en petits morceaux et le mélanger avec l'huile et des épices. \n 2. Dans un wrap, étaler la crème fraiche et ajouter du fromage râpé par dessus. \n 3. Faire cuire les morceaux de poulet \n 4. Ajouter le poulet cuit dans le wrap \n 5. Refermer le wrap et faire dorer chacune de ses faces à la poêle."
 	},
 	"23":{
 		"Nom":"Buddha Bowl",
 		"Aliments":["Boulghour","Avocat","Concombre","Poivron","Fromage","Tomate cerise","Huile","Citron","Persil"],
 		"Quantite":["250g","1/2","1/4","1/4","100g","4","5 cas","1/2","20g"],
-		"Image":"buddhaBowl.png",
+		"Image":"buddhabowl",
 		"Etape":"1.Cuire le boulgour (temps de cuisson indiqué sur votre boite). \n 2. Pendant que le boulgour cuit, couper les légumes \n 3. Préparer la sauce : ajouter dans un petit récipient 5 cuillères à soupe d'huile d'olive, le jus d'un demi citron, du sel et du poivre \n 4. Mélanger le tout."
 	},
 	"24":{
 		"Nom":"Tortilla au chorizo",
 		"Aliments":["Pommes de terre","Oeuf","Chorizo","Oignon","Persil","Huile"],
 		"Quantite":["4","6","80g","1","10g","10cl"],
-		"Image":"tortillaChorizo.png",
+		"Image":"tortillachorizo",
 		"Etape":"1.Eplucher et couper en fines tranches les pommes de terre et l'oignon. \n 2. Decouper en petits morceaux le chorizo. \n 3. Dans une poele, faire revenir les pommes de terres et les oignons \n 4. Fouetter les oeufs et saler poivrer. \n 5. Ajouter le chorizo et les oeufs dans la poele. \n 6. Faire cuire le tout."
 	}
 }

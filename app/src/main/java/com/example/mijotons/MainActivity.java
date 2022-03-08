@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     Intent intent;
 
-    private LinearLayout ll_fruits,ll_legumes,ll_viandes,ll_lait,ll_recherche,ll_menuG;
+    private LinearLayout ll_fruits,ll_legumes,ll_viandes,ll_lait,ll_recherche,ll_menuG,ll_autre;
     private EditText et_recherche;
 
     @SuppressLint("NonConstantResourceId")
@@ -54,11 +54,13 @@ public class MainActivity extends AppCompatActivity {
         ll_lait=findViewById(R.id.ll_lait);
         ll_recherche=findViewById(R.id.ll_recherche);
         ll_menuG=findViewById(R.id.ll_menuG);
+        ll_autre=findViewById(R.id.ll_autre);
 
         Button b_fruits = findViewById(R.id.b_fruits);
         Button b_viandes = findViewById(R.id.b_viandes);
         Button b_legumes = findViewById(R.id.b_legumes);
         Button b_lait = findViewById(R.id.b_lait);
+        Button b_autre = findViewById(R.id.b_autre);
         Button b_terminerChoixPlacards = findViewById(R.id.b_terminerChoixPlacards);
 
         et_recherche = findViewById(R.id.et_recherche);
@@ -85,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
         GridLayout gridLayoutL = new GridLayout(getApplicationContext());
         gridLayoutL.setColumnCount(nbrColonne);
         gridLayoutL.setRowCount(aliment.legumes.size()/2);
+
+        GridLayout gridLayoutA = new GridLayout(getApplicationContext());
+        gridLayoutA.setColumnCount(nbrColonne);
+        gridLayoutA.setRowCount(aliment.autre.size()/2);
 
 
 
@@ -195,6 +201,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //menu autres
+        b_autre.setOnClickListener(view -> {
+            if(aliment.autre.size() != 0 && ll_autre.getChildCount() != 0){
+                gridLayoutA.removeAllViews();
+                ll_autre.removeAllViews();
+            }
+            else if (ll_autre.getChildCount() == 0)
+            {
+                try {
+                    aliment.initRecherche(getApplicationContext());
+                } catch (JSONException | IOException e) {
+                    e.printStackTrace();
+                }
+                for(int i=0;i<aliment.autre.size();i++)
+                {
+                    gridLayoutA.addView(aliment.autre.get(i));
+                }
+
+                ll_autre.addView(gridLayoutA);
+            }
+        });
+
         //bouton j'ai finis
         b_terminerChoixPlacards.setOnClickListener(view -> {
             aliment.initCocher();
@@ -202,10 +230,12 @@ public class MainActivity extends AppCompatActivity {
             gridLayoutL.removeAllViews();
             gridLayoutPL.removeAllViews();
             gridLayoutV.removeAllViews();
+            gridLayoutA.removeAllViews();
             ll_legumes.removeAllViews();
             ll_viandes.removeAllViews();
             ll_lait.removeAllViews();
             ll_fruits.removeAllViews();
+            ll_autre.removeAllViews();
 
             intent = new Intent(this, ListeRecette.class);
             startActivity(intent);
@@ -225,10 +255,12 @@ public class MainActivity extends AppCompatActivity {
                     gridLayoutL.removeAllViews();
                     gridLayoutPL.removeAllViews();
                     gridLayoutV.removeAllViews();
+                    gridLayoutA.removeAllViews();
                     ll_legumes.removeAllViews();
                     ll_viandes.removeAllViews();
                     ll_lait.removeAllViews();
                     ll_fruits.removeAllViews();
+                    ll_autre.removeAllViews();
                     ll_menuG.setVisibility(View.INVISIBLE);
                     ll_recherche.removeAllViews();
                     try {
@@ -257,6 +289,12 @@ public class MainActivity extends AppCompatActivity {
                     for (int indice = 0; indice < aliment.lait.size(); indice++) {
                         if (aliment.nomLait[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
                             ll_recherche.addView(aliment.lait.get(indice));
+                        }
+                    }
+
+                    for (int indice = 0; indice < aliment.autre.size(); indice++) {
+                        if (aliment.nomAutre[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                            ll_recherche.addView(aliment.autre.get(indice));
                         }
                     }
 
