@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="detailsRecette">Préparer votre recette</string>
+    <string name="nomRecetteDetails">Nom Recette</string>
+    <string name="tempsPreparation">Temps de préparation : xHxx</string>
+    <string name="nombreDePersonnes">Nombre de personnes : x</string>
+    <string name="ingrediantsManquants">Ingrédient(s) manquant(s) : x</string>
+    <string name="ingrediants">Ingrédients :</string>
+    <string name="exempleIngrediant">- Exemple ingrediant</string>
+    <string name="etapes">Etapes :</string>
+    <string name="etapesRecettes">  1-Eplucher les pommes de terre et les couper en dés \n
+    2-Faire fondre les oignons dans une poele avec un filet d huile \n
+    3-Faire dorer les pommes de terres avec les oignons une fois ceux-ci fondu \n
+    4-Une fois dorées, ajouter les lardons et laisser finir de cuire \n
+    5-Couper le reblochon en deux et gratter la croute \n
+    6-Dans le plat, diusposer une première couche de pomme de terre, disposer ensuite la moitié du reblochon, puis répéter une fois l'étape \n
+    7-Enfourner 20min à 200°C
+    </string>
+</resources>
+
