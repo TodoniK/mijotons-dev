@@ -14,6 +14,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Map;
 
 public class readJson {
 
@@ -31,6 +32,17 @@ public class readJson {
         }
 
         return liste;
+    }
+
+    public static recette readBaseRecette(Context context,String nom) throws IOException, JSONException {
+
+        // Read content of company.json
+        String jsonText = readText(context, R.raw.baserecette);
+
+        JSONObject jsonRoot = new JSONObject(jsonText);
+        //OKAY jusqu'ici
+        JSONObject recette = jsonRoot.getJSONObject(nom);
+        return new recette(Integer.valueOf(nom),recette.getString("Nom"),recette.getJSONArray("Aliments"),recette.getJSONArray("Quantite"),recette.getString("Image"),recette.getString("Etape"));
     }
 
     private static String readText(Context context, int resId) throws IOException {

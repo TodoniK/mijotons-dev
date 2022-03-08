@@ -27,41 +27,37 @@ public class aliment {
     public static ArrayList<CheckBox> viandes = new ArrayList<>();
     public static ArrayList<CheckBox> legumes = new ArrayList<>();
 
-    public static ArrayList<CheckBox> replacement =  new ArrayList<>();
-
     public static void init(Context context) throws JSONException, IOException {
-        fruits.clear();
-        lait.clear();
-        viandes.clear();
-        legumes.clear();
+        if(fruits.size() == 0){
+            nomFruits = readJson.readBaseAliment(context, "Fruits");
+            for (String nomFruit : aliment.nomFruits) {
+                CheckBox check = new CheckBox(context);
+                check.setText(nomFruit);
+                fruits.add(check);
+            }
 
-        nomFruits = readJson.readBaseAliment(context, "Fruits");
-        for (String nomFruit : aliment.nomFruits) {
-            CheckBox check = new CheckBox(context);
-            check.setText(nomFruit);
-            fruits.add(check);
+            nomViandes = readJson.readBaseAliment(context,"Viandes_Poissons");
+            for (String nomViande : aliment.nomViandes) {
+                CheckBox check = new CheckBox(context);
+                check.setText(nomViande);
+                viandes.add(check);
+            }
+
+            nomLegumes = readJson.readBaseAliment(context,"Legumes");
+            for (String nomLegume : aliment.nomLegumes) {
+                CheckBox check = new CheckBox(context);
+                check.setText(nomLegume);
+                legumes.add(check);
+            }
+
+            nomLait = readJson.readBaseAliment(context,"Produits_laitiers");
+            for (String nomLait : aliment.nomLait) {
+                CheckBox check = new CheckBox(context);
+                check.setText(nomLait);
+                lait.add(check);
+            }
         }
 
-        nomViandes = readJson.readBaseAliment(context,"ViandesPoissons");
-        for (String nomViande : aliment.nomViandes) {
-            CheckBox check = new CheckBox(context);
-            check.setText(nomViande);
-            viandes.add(check);
-        }
-
-        nomLegumes = readJson.readBaseAliment(context,"Legumes");
-        for (String nomLegume : aliment.nomLegumes) {
-            CheckBox check = new CheckBox(context);
-            check.setText(nomLegume);
-            legumes.add(check);
-        }
-
-        nomLait = readJson.readBaseAliment(context,"Produits laitiers");
-        for (String nomLait : aliment.nomLait) {
-            CheckBox check = new CheckBox(context);
-            check.setText(nomLait);
-            lait.add(check);
-        }
     }
 
     public static void initCocher()

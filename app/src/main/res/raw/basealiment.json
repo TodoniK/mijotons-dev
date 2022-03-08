@@ -1,6 +1,6 @@
 {
- "Fruits":["Abricot","Ananas","Banane","Cerise","Fraise","Figue","Myrtille"],
- "Produits laitiers":["Yaourt","Fromage","Creme fraiche","Lait","Beurre"],
- "ViandesPoissons":["Poulet","Boeuf","Agneau","Lapin","Dinde","Porc","Brochet","Anguille","Carpe","Turbo","Moules","Crevettes","Huitres","Langoustes"],
- "Legumes":["Ail","Artichaut","Asperge","Aubergine","Avocat","Betterave","Brocoli"]
+ "Fruits":["Citron","Pâtes","Abricot","Ananas","Banane","Cerise","Fraise","Figue","Myrtille"],
+ "Produits_laitiers":["Fromage chevre","Fromage frais","Gruyère","Yaourt","Fromage","Creme fraiche","Lait","Beurre","Gruyere"],
+ "Viandes_Poissons":["Chorizo","Saucisses","Saumon","Poulet","Jambon","Boeuf","Agneau","Lapin","Dinde","Porc","Brochet","Anguille","Carpe","Turbo","Moules","Crevettes","Huitres","Langoustes"],
+ "Legumes":["Poivron","Petits poids","Tomates cerises","Pommes de terre","Persil","Concombre","Patate douce","Potiron","Carotte","Salade","Oignon","Champignons","Ail","Artichaut","Asperge","Aubergine","Avocat","Betterave","Brocoli","Tomates"]
 }

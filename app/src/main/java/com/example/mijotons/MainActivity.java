@@ -198,10 +198,6 @@ public class MainActivity extends AppCompatActivity {
         //bouton j'ai finis
         b_terminerChoixPlacards.setOnClickListener(view -> {
             aliment.initCocher();
-            for(int i=0;i<aliment.cocherAliment.size();i++)
-            {
-                Log.d("Aliment ",aliment.cocherAliment.get(i));
-            }
             gridLayoutF.removeAllViews();
             gridLayoutL.removeAllViews();
             gridLayoutPL.removeAllViews();
@@ -210,9 +206,13 @@ public class MainActivity extends AppCompatActivity {
             ll_viandes.removeAllViews();
             ll_lait.removeAllViews();
             ll_fruits.removeAllViews();
+
+            intent = new Intent(this, ListeRecette.class);
+            startActivity(intent);
+
         });
 
-
+        //Barre de recherche
         et_recherche.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
