@@ -57,37 +57,3234 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/ll_recette0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:visibility="invisible"
                     android:weightSum="100"
-                    android:orientation="horizontal">
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
                     <ImageView
+                        android:id="@+id/iv_image0"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara"/>
-                    <TextView
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="70"
-                        android:gravity="center_horizontal"
-                        android:text="Titre\n\n\n -200g de pâte   -100g de creme fraich\n -100g de jambon  -sel/poivre"/>
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre0"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps0"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient0"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/b_recette7"
+                <LinearLayout
+                    android:id="@+id/ll_recette1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@color/vert"
-                    android:drawableStart="@drawable/produits_laitiers"
-                    android:drawableTint="@color/white"
-                    android:gravity="top|center_horizontal"
-                    android:text="@string/texteBoutonLait" />
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image1"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image2"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recette3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image3"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recette4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image4"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient25"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient26"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient27"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient28"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient29"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image5"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient30"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient31"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient34"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient35"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recette6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image6"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient36"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient37"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient39"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient40"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient41"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recette7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image7"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient42"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient43"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient44"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient45"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient46"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient47"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recette8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image8"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre8"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps8"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient48"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient49"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient51"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient52"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient53"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image9"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre9"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps9"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient54"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient55"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient56"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient57"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient58"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient59"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image10"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre10"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps10"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient60"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient61"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient62"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient63"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient64"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient65"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image11"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre11"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps11"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient66"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient67"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient68"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient69"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient70"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient71"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image12"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre12"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps12"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient72"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient73"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient74"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient75"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient76"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient77"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image13"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre13"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps13"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient78"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient79"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient80"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient81"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient82"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient83"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image14"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre14"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps14"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient84"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient85"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient86"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient87"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient88"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient89"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image15"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre15"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps15"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient90"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient91"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient92"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient93"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient94"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient95"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image16"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre16"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps16"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient96"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient97"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient98"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient99"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient100"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient101"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image17"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre17"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps17"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient102"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient103"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient104"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient105"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient106"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient107"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image18"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre18"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps18"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient108"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient109"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient110"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient111"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient112"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient113"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recette19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:visibility="invisible"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:id="@+id/iv_image19"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="30"
+                        app:srcCompat="@drawable/patescarbonara" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="70">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+                            <TextView
+                                android:id="@+id/titre19"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Titre"
+                                android:layout_weight="70"
+                                android:textSize="20sp"
+                                android:gravity="center_horizontal"/>
+                            <TextView
+                                android:id="@+id/temps19"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Temps :"
+                                android:layout_weight="30"
+                                android:textSize="15sp"
+                                android:gravity="left|center"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Pour x personnes :"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient114"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient115"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient116"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient117"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient118"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv_ingredient119"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="invisible"
+                                    android:gravity="center|center_horizontal"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/exempleIngrediant"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
+
         </ScrollView>
     </LinearLayout>
 

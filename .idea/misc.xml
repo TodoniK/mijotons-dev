@@ -20,14 +20,15 @@
         <entry key="..\:/Users/TodoniK/AndroidStudioProjects/Mijotons/app/src/main/res/menu/navigation_item.xml" value="0.2921875" />
         <entry key="..\:/Users/TodoniK/AndroidStudioProjects/Mijotons/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2845" />
         <entry key="..\:/Users/TodoniK/AndroidStudioProjects/Mijotons/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2845" />
+        <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/drawable/customborder.xml" value="0.1325" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/drawable/imagerecette.xml" value="0.139" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_affichage_recette.xml" value="0.264" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_carte.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_chargement.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_courses.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_detail_recette.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_detail_recette.xml" value="0.2" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_favoris.xml" value="0.14322916666666666" />
-        <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_historique.xml" value="0.2" />
+        <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_historique.xml" value="0.4" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_liste_recette.xml" value="0.264" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/activity_menuplacard.xml" value="0.12760416666666666" />
         <entry key="..\:/Users/abdel/StudioProjects/DeveloppementMijotons/app/src/main/res/layout/mes_placards.xml" value="0.152" />

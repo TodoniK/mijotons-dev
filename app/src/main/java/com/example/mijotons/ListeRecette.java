@@ -44,7 +44,7 @@ import java.util.ArrayList;
 public class ListeRecette extends AppCompatActivity {
 
     Intent intent;
-    int filtre = 0;
+    static int filtre = 0;
 
     ArrayList<recette> listeRecette = new ArrayList<>();
     ArrayList<recette> listeRecetteAfficher =  new ArrayList<>();
@@ -173,7 +173,8 @@ public class ListeRecette extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                             Historique.ajoutHistorique(rec);
-                            intent = new Intent(getApplicationContext(), MainActivity.class);
+                            detail_recette.recetteAfficher = rec;
+                            intent = new Intent(getApplicationContext(), detail_recette.class);
                             startActivity(intent);
 
                         }
@@ -245,7 +246,8 @@ public class ListeRecette extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Historique.ajoutHistorique(rec);
-                        intent = new Intent(getApplicationContext(), MainActivity.class);
+                        detail_recette.recetteAfficher = rec;
+                        intent = new Intent(getApplicationContext(), detail_recette.class);
                         startActivity(intent);
                     }
                 });

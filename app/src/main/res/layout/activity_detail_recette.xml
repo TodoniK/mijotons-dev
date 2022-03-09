@@ -19,6 +19,11 @@
         android:background="@color/vert"
         android:text="@string/detailsRecette" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical">
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -40,8 +45,7 @@
 
 
             <ImageView
-
-                android:id="@+id/iv_greenLogo"
+                android:id="@+id/iv_imageRecette"
                 android:layout_width="200dp"
                 android:layout_height="180dp"
                 android:background="@drawable/customborder"
@@ -140,9 +144,10 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_ingrediant1"
+                        android:id="@+id/tv_ingredient1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:visibility="invisible"
                         android:gravity="center|center_horizontal"
                         android:paddingTop="10dp"
                         android:text="@string/exempleIngrediant"
@@ -152,9 +157,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/tv_ingrediant2"
+                        android:id="@+id/tv_ingredient2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:visibility="invisible"
                         android:gravity="center|center_horizontal"
                         android:paddingTop="10dp"
                         android:text="@string/exempleIngrediant"
@@ -164,9 +170,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/tv_ingrediant3"
+                        android:id="@+id/tv_ingredient3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:visibility="invisible"
                         android:gravity="center|center_horizontal"
                         android:paddingTop="10dp"
                         android:text="@string/exempleIngrediant"
@@ -186,9 +193,10 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_ingrediant4"
+                        android:id="@+id/tv_ingredient4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:visibility="invisible"
                         android:gravity="center|center_horizontal"
                         android:paddingTop="10dp"
                         android:text="@string/exempleIngrediant"
@@ -198,9 +206,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/tv_ingrediant5"
+                        android:id="@+id/tv_ingredient5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:visibility="invisible"
                         android:gravity="center|center_horizontal"
                         android:paddingTop="10dp"
                         android:text="@string/exempleIngrediant"
@@ -210,9 +219,10 @@
                     </TextView>
 
                     <TextView
-                        android:id="@+id/tv_ingrediant6"
+                        android:id="@+id/tv_ingredient6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:visibility="invisible"
                         android:gravity="center|center_horizontal"
                         android:paddingTop="10dp"
                         android:text="@string/exempleIngrediant"
@@ -235,6 +245,7 @@
             android:orientation="vertical"
             android:paddingVertical="10dp">
             ">
+
             <LinearLayout
 
                 android:layout_width="match_parent"
@@ -246,7 +257,7 @@
                 android:paddingVertical="20dp">
 
                 <TextView
-                    android:id="@+id/tv_etapes"
+                    android:id="@+id/tv_etapesDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal|left"
@@ -259,8 +270,7 @@
                 </TextView>
 
                 <TextView
-
-                    android:id="@+id/tv_etapese"
+                    android:id="@+id/tv_etapes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal|left"
@@ -276,8 +286,10 @@
 
             </LinearLayout>
 
+
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="wrap_content"
