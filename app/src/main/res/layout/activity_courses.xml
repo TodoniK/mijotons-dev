@@ -10,25 +10,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Courses">
 
+    <TextView
+        android:id="@+id/tv_nomMenuCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:text="@string/menuCourses"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="@color/vert"
+        />
 
-    <!-- _________LAYOUT HEADER + CONTENUE DE LA PAGE___________ -->
+    <!-- _________CONTENUE DE LA PAGE___________ -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-        <!-- _______HEADER_____________ -->
-
-        <TextView
-            android:id="@+id/tv_nomMenuCourse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center|center_horizontal"
-            android:text="@string/menuCourses"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:background="@color/vert"
-            />
 
         <EditText
             android:layout_width="match_parent"
@@ -38,13 +36,11 @@
             android:autofillHints="15"
             android:gravity="center|center_horizontal"
             android:hint="@string/defautRecherche"
-            android:inputType="" />
+            android:inputType=""/>
 
-        <View
-            android:id="@+id/diviserTitre"
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="@color/white" />
+            android:layout_height="10dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -72,12 +68,9 @@
 
 
         <!-- SCROLL VIEW QUI RETOURNE LES RECETTES -->
-
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fillViewport="true"
             android:orientation="vertical">
 
             <LinearLayout
@@ -85,305 +78,42 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
-                <View
-                    android:id="@+id/diviseurProduit1"
+                <Space
+                    android:id="@+id/diviseur1"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
+                    android:layout_height="20dp">
+                </Space>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
                     >
 
                     <CheckBox
                         android:id="@+id/produit1"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_height="match_parent"
                         android:text="Tomates cerises"
-                        tools:ignore="MissingConstraints" />
+                        android:layout_weight="70"
+                         />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="quantité"
+                        android:layout_weight="20"
+                        />
 
                     <Spinner
                         android:id="@+id/spinner1"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner1"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit2"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit2"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Pâtes"
-                        tools:ignore="MissingConstraints" />
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        />
 
-                    <Spinner
-                        android:id="@+id/spinner2"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner2"
-                        tools:ignore="MissingConstraints" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit3"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Saumon"
-                        tools:ignore="MissingConstraints" />
-
-                    <Spinner
-                        android:id="@+id/spinner3"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner3"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit4"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Riz"
-                        tools:ignore="MissingConstraints" />
-
-                    <Spinner
-                        android:id="@+id/spinner4"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner4"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit5"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Sel"
-                        tools:ignore="MissingConstraints" />
-
-                    <Spinner
-                        android:id="@+id/spinner5"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner5"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit6"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Beurre"
-                        tools:ignore="MissingConstraints" />
-
-                    <Spinner
-                        android:id="@+id/spinner6"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner6"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit7"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Farine"
-                        tools:ignore="MissingConstraints" />
-
-                    <Spinner
-                        android:id="@+id/spinner7"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner7"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit8"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Courgettes"
-                        tools:ignore="MissingConstraints" />
-
-                    <Spinner
-                        android:id="@+id/spinner8"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner8"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:id="@+id/diviseurProduit9"
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:background="@color/white" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <CheckBox
-                        android:id="@+id/produit9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Carottes"
-                        tools:ignore="MissingConstraints" />
-
-                    <Spinner
-                        android:id="@+id/spinner9"
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="75dp"
-                        android:layout_height="40dp"
-                        android:hint="quantité"
-                        app:layout_constraintEnd_toStartOf="@+id/spinner9"
-                        tools:ignore="MissingConstraints" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
+                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>
@@ -403,26 +133,26 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
-            android:id="@+id/footer"
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="match_parent"
+            android:background="@color/vert"
+            android:foregroundTint="#FFFFFF"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="#FFFFFF"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation_item" />
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/navigationBar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/vert"
-                android:foregroundTint="#FFFFFF"
-                app:itemIconTint="@color/white"
-                app:itemTextColor="#FFFFFF"
-                app:labelVisibilityMode="labeled"
-                app:menu="@menu/navigation_item" />
+        <!--____________ FIN FOOTER_________________-->
 
-            <!--____________ FIN FOOTER_________________-->
-
-        </LinearLayout>
     </LinearLayout>
 
     <!-- _______________FIN SCROLL BAR__________________ -->

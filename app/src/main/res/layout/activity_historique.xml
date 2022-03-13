@@ -37,7 +37,14 @@
             android:gravity="center|center_horizontal"
             android:hint="@string/defautRecherche"
             android:inputType="" />
-
+        
+        <LinearLayout
+            android:id="@+id/ll_rien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+        </LinearLayout>
         <!-- ____________FIN DU HEADER________________________ -->
 
 
@@ -71,7 +78,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -87,31 +95,31 @@
                                 android:id="@+id/titre0"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
-                                android:gravity="center_horizontal"/>
+                                android:gravity="center_horizontal"
+                                />
                             <TextView
                                 android:id="@+id/temps0"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
+                            android:baselineAligned="false"
                             >
 
 
@@ -130,7 +138,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -143,7 +151,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -156,7 +164,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -179,7 +187,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -192,7 +200,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -205,7 +213,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -232,7 +240,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -248,7 +257,7 @@
                                 android:id="@+id/titre1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -256,23 +265,22 @@
                                 android:id="@+id/temps1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
+                            android:baselineAligned="false"
                             >
 
 
@@ -291,7 +299,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -304,7 +312,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -317,7 +325,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -340,7 +348,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -353,7 +361,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -366,7 +374,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -393,7 +401,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -409,7 +418,7 @@
                                 android:id="@+id/titre2"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -417,23 +426,23 @@
                                 android:id="@+id/temps2"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
+                            android:baselineAligned="false"
                             >
 
 
@@ -452,7 +461,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -465,7 +474,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -478,7 +487,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -501,7 +510,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -514,7 +523,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -527,7 +536,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -557,7 +566,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -573,7 +583,7 @@
                                 android:id="@+id/titre3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -581,20 +591,20 @@
                                 android:id="@+id/temps3"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -616,7 +626,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -629,7 +639,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -642,7 +652,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -665,7 +675,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -678,7 +688,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -691,7 +701,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -719,7 +729,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -735,7 +746,7 @@
                                 android:id="@+id/titre4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -743,20 +754,20 @@
                                 android:id="@+id/temps4"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -767,7 +778,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                tools:ignore="TooManyViews">
 
                                 <TextView
                                     android:id="@+id/tv_ingredient24"
@@ -778,7 +790,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -791,7 +803,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -804,7 +816,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -827,7 +839,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -840,7 +852,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -853,7 +865,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -880,7 +892,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -896,7 +909,7 @@
                                 android:id="@+id/titre5"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -904,20 +917,20 @@
                                 android:id="@+id/temps5"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -939,7 +952,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -952,7 +965,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -965,7 +978,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -988,7 +1001,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1001,7 +1014,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1014,7 +1027,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1042,7 +1055,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -1058,7 +1072,7 @@
                                 android:id="@+id/titre6"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1066,20 +1080,20 @@
                                 android:id="@+id/temps6"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -1101,7 +1115,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1114,7 +1128,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1127,7 +1141,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1150,7 +1164,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1163,7 +1177,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1176,7 +1190,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1204,7 +1218,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -1220,7 +1235,7 @@
                                 android:id="@+id/titre7"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1228,20 +1243,20 @@
                                 android:id="@+id/temps7"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -1263,7 +1278,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1276,7 +1291,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1289,7 +1304,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1312,7 +1327,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1325,7 +1340,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1338,7 +1353,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1366,7 +1381,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -1382,7 +1398,7 @@
                                 android:id="@+id/titre8"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1390,20 +1406,20 @@
                                 android:id="@+id/temps8"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -1425,7 +1441,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1438,7 +1454,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1451,7 +1467,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1474,7 +1490,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1487,7 +1503,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1500,7 +1516,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1527,7 +1543,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -1543,7 +1560,7 @@
                                 android:id="@+id/titre9"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1551,20 +1568,20 @@
                                 android:id="@+id/temps9"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne9"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -1586,7 +1603,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1599,7 +1616,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1612,7 +1629,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1635,7 +1652,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1648,7 +1665,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1661,7 +1678,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1688,7 +1705,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -1704,7 +1722,7 @@
                                 android:id="@+id/titre10"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1712,20 +1730,20 @@
                                 android:id="@+id/temps10"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -1747,7 +1765,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1760,7 +1778,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1773,7 +1791,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1796,7 +1814,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1809,7 +1827,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1822,7 +1840,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1849,7 +1867,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -1865,7 +1884,7 @@
                                 android:id="@+id/titre11"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1873,20 +1892,20 @@
                                 android:id="@+id/temps11"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne11"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -1908,7 +1927,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1921,7 +1940,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1934,7 +1953,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1957,7 +1976,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1970,7 +1989,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -1983,7 +2002,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2010,7 +2029,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -2026,7 +2046,7 @@
                                 android:id="@+id/titre12"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2034,20 +2054,20 @@
                                 android:id="@+id/temps12"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne12"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -2069,7 +2089,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2082,7 +2102,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2095,7 +2115,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2118,7 +2138,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2131,7 +2151,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2144,7 +2164,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2171,7 +2191,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -2187,7 +2208,7 @@
                                 android:id="@+id/titre13"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2195,20 +2216,20 @@
                                 android:id="@+id/temps13"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne13"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -2230,7 +2251,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2243,7 +2264,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2256,7 +2277,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2279,7 +2300,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2292,7 +2313,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2305,7 +2326,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2332,7 +2353,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -2348,7 +2370,7 @@
                                 android:id="@+id/titre14"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2356,20 +2378,20 @@
                                 android:id="@+id/temps14"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne14"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -2391,7 +2413,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2404,7 +2426,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2417,7 +2439,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2440,7 +2462,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2453,7 +2475,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2466,7 +2488,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2493,7 +2515,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -2509,7 +2532,7 @@
                                 android:id="@+id/titre15"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2517,20 +2540,20 @@
                                 android:id="@+id/temps15"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -2552,7 +2575,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2565,7 +2588,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2578,7 +2601,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2601,7 +2624,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2614,7 +2637,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2627,7 +2650,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2654,7 +2677,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -2670,7 +2694,7 @@
                                 android:id="@+id/titre16"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2678,20 +2702,20 @@
                                 android:id="@+id/temps16"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -2713,7 +2737,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2726,7 +2750,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2739,7 +2763,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2762,7 +2786,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2775,7 +2799,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2788,7 +2812,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2815,7 +2839,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -2831,7 +2856,7 @@
                                 android:id="@+id/titre17"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2839,20 +2864,20 @@
                                 android:id="@+id/temps17"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne17"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -2874,7 +2899,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2887,7 +2912,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2900,7 +2925,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2923,7 +2948,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2936,7 +2961,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2949,7 +2974,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -2976,7 +3001,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -2992,7 +3018,7 @@
                                 android:id="@+id/titre18"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -3000,20 +3026,20 @@
                                 android:id="@+id/temps18"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne18"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -3035,7 +3061,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3048,7 +3074,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3061,7 +3087,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3084,7 +3110,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3097,7 +3123,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3110,7 +3136,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3137,7 +3163,8 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="30"
-                        app:srcCompat="@drawable/patescarbonara" />
+                        app:srcCompat="@drawable/patescarbonara"
+                        android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -3153,7 +3180,7 @@
                                 android:id="@+id/titre19"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Titre"
+                                android:text="@string/titre"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -3161,20 +3188,20 @@
                                 android:id="@+id/temps19"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="Temps :"
+                                
                                 android:layout_weight="30"
-                                android:textSize="15sp"
-                                android:gravity="left|center"/>
+                                android:textSize="12sp"
+                                android:gravity="start|center"/>
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_nbrPersonne19"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
-                            android:text="Pour x personnes :"/>
+                            android:textSize="18sp" />
 
                         <LinearLayout
-
+                            android:baselineAligned="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -3196,7 +3223,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3209,7 +3236,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3222,7 +3249,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3245,7 +3272,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3258,7 +3285,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 
@@ -3271,7 +3298,7 @@
                                     android:paddingTop="10dp"
                                     android:text="@string/exempleIngrediant"
                                     android:textColor="@color/black"
-                                    android:textSize="15dp">
+                                    android:textSize="12sp">
 
                                 </TextView>
 

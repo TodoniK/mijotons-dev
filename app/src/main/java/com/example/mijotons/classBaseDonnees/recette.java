@@ -12,11 +12,13 @@ public class recette {
     private String[] quantite;
     private String image;
     private String description;
+    private String temps;
+    private int nbrPersonne;
 
-    public recette(int id,String n,JSONArray a,JSONArray q,String i,String d) throws JSONException {
+    public recette(int id,String n,JSONArray a,JSONArray q,String i,String d,String t,int personne) throws JSONException {
         idRecette = id;
         nom = n;
-        ArrayList<String> exampleList = new ArrayList<String>();
+        ArrayList<String> exampleList = new ArrayList<>();
         for (int j = 0; j < a.length(); j++) {
             exampleList.add(a.getString(j));
         }
@@ -28,6 +30,26 @@ public class recette {
         quantite = exampleList.toArray(new String[exampleList.size()]);
         image = i;
         description = d;
+        temps=t;
+        nbrPersonne=personne;
+    }
+
+
+
+    public String getTemps() {
+        return temps;
+    }
+
+    public void setTemps(String temps) {
+        this.temps = temps;
+    }
+
+    public int getNbrPersonne() {
+        return nbrPersonne;
+    }
+
+    public void setNbrPersonne(int nbrPersonne) {
+        this.nbrPersonne = nbrPersonne;
     }
 
     public int getIdRecette() {

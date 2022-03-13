@@ -1,52 +1,37 @@
 package com.example.mijotons;
 
-import static android.view.Gravity.CENTER;
 import static android.view.Gravity.CENTER_HORIZONTAL;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowMetrics;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mijotons.classBaseDonnees.aliment;
 import com.example.mijotons.classBaseDonnees.readJson;
 import com.example.mijotons.classBaseDonnees.recette;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import org.json.JSONException;
-
 import java.io.IOException;
 import java.util.ArrayList;
 
+@SuppressLint("SetTextI18n")
 public class ListeRecette extends AppCompatActivity {
 
     Intent intent;
     static int filtre = 0;
 
-    ArrayList<recette> listeRecette = new ArrayList<>();
+    static ArrayList<recette> listeRecette = new ArrayList<>();
     ArrayList<recette> listeRecetteAfficher =  new ArrayList<>();
 
     Spinner s_filtre;
@@ -91,15 +76,6 @@ public class ListeRecette extends AppCompatActivity {
             return true;
         });
 
-        //Initialisation de la liste des recettes
-        try {
-            for (int i = 1;i<25;i++){
-                listeRecette.add(readJson.readBaseRecette(getApplicationContext(),String.valueOf(i)));
-            }
-        } catch (IOException | JSONException e) {
-            e.printStackTrace();
-        }
-
         //Filtre
         s_filtre.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -139,8 +115,6 @@ public class ListeRecette extends AppCompatActivity {
 
         //Initialisation de  l'affichage de la liste des recettes
         initListeRecette();
-
-
     }
 
     private void initRecherche(CharSequence charSequence) {
@@ -169,15 +143,16 @@ public class ListeRecette extends AppCompatActivity {
                     button.setGravity(CENTER_HORIZONTAL);
                     button.setLayoutParams(params);
                     //Redirection vers la page du détaille
-                    button.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Historique.ajoutHistorique(rec);
-                            detail_recette.recetteAfficher = rec;
-                            intent = new Intent(getApplicationContext(), detail_recette.class);
-                            startActivity(intent);
-
+                    button.setOnClickListener(view -> {
+                        Historique.ajoutHistorique(rec);
+                        detail_recette.recetteAfficher = rec;
+                        try {
+                            readJson.enregistrement(Historique.listeHistorique,"Historique",getApplicationContext());
+                        } catch (IOException e) {
+                            e.printStackTrace();
                         }
+                        intent = new Intent(getApplicationContext(), detail_recette.class);
+                        startActivity(intent);
                     });
                     //Ajout du bouton au layout
                     linearLayout.addView(button);
@@ -195,6 +170,7 @@ public class ListeRecette extends AppCompatActivity {
 
 
     }
+
 
 
     public void initListeRecette(){
@@ -218,7 +194,7 @@ public class ListeRecette extends AppCompatActivity {
 
         ll_listeRecette.removeAllViews();
 
-        if (listeRecetteAfficher.size() != 0){
+        if (listeRecetteAfficher.size() != 0 && aliment.cocherAliment.size() != 0){
             int compteur=0;
             //Paramètre des boutons pour leur taille
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels/2-45,getResources().getDisplayMetrics().widthPixels/3,0f);
@@ -242,14 +218,16 @@ public class ListeRecette extends AppCompatActivity {
                 button.setGravity(CENTER_HORIZONTAL);
                 button.setLayoutParams(params);
                 //Redirection vers la page du détaille
-                button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Historique.ajoutHistorique(rec);
-                        detail_recette.recetteAfficher = rec;
-                        intent = new Intent(getApplicationContext(), detail_recette.class);
-                        startActivity(intent);
+                button.setOnClickListener(view -> {
+                    Historique.ajoutHistorique(rec);
+                    detail_recette.recetteAfficher = rec;
+                    try {
+                        readJson.enregistrement(Historique.listeHistorique,"Historique",getApplicationContext());
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
+                    intent = new Intent(getApplicationContext(), detail_recette.class);
+                    startActivity(intent);
                 });
                 //Ajout du bouton au layout
                 linearLayout.addView(button);
@@ -259,6 +237,10 @@ public class ListeRecette extends AppCompatActivity {
         }
         else
         {
+            s_filtre.setEnabled(true);
+            if(aliment.cocherAliment.size() == 0){
+                s_filtre.setEnabled(false);
+            }
             TextView textView = new TextView(getApplicationContext());
             textView.setText("Aucune recette correspondante !");
             textView.setTextSize(25);

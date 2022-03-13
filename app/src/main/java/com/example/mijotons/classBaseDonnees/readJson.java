@@ -1,8 +1,6 @@
 package com.example.mijotons.classBaseDonnees;
 
 import android.content.Context;
-import android.location.Address;
-import android.util.Log;
 
 import com.example.mijotons.R;
 
@@ -11,15 +9,18 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Map;
+import java.util.ArrayList;
 
 public class readJson {
 
     public static String[] readBaseAliment(Context context,String nom) throws IOException, JSONException {
-
         // Read content of company.json
         String jsonText = readText(context, R.raw.basealiment);
 
@@ -35,25 +36,66 @@ public class readJson {
     }
 
     public static recette readBaseRecette(Context context,String nom) throws IOException, JSONException {
-
         // Read content of company.json
         String jsonText = readText(context, R.raw.baserecette);
-
         JSONObject jsonRoot = new JSONObject(jsonText);
         //OKAY jusqu'ici
         JSONObject recette = jsonRoot.getJSONObject(nom);
-        return new recette(Integer.valueOf(nom),recette.getString("Nom"),recette.getJSONArray("Aliments"),recette.getJSONArray("Quantite"),recette.getString("Image"),recette.getString("Etape"));
+        return new recette(Integer.parseInt(nom),recette.getString("Nom"),recette.getJSONArray("Aliments"),recette.getJSONArray("Quantite"),recette.getString("Image"),recette.getString("Etape"),recette.getString("Temps"),recette.getInt("Personnes"));
     }
 
     private static String readText(Context context, int resId) throws IOException {
         InputStream is = context.getResources().openRawResource(resId);
         BufferedReader br= new BufferedReader(new InputStreamReader(is));
         StringBuilder sb= new StringBuilder();
-        String s= null;
+        String s;
         while((  s = br.readLine())!=null) {
             sb.append(s);
             sb.append("\n");
         }
         return sb.toString();
+    }
+
+    public static void enregistrement(ArrayList<recette> listeRecette,String nomBaseDonnees,Context context) throws IOException {
+        JSONObject obj = new JSONObject() ;
+
+        try {
+            for(int i = 0 ;i<listeRecette.size();i++){
+                obj.put("Recette"+ i,listeRecette.get(i).getNom());
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        String userString = obj.toString();
+        File file = new File(context.getFilesDir(),nomBaseDonnees);
+        FileWriter fileWriter = new FileWriter(file);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        bufferedWriter.write(userString);
+        bufferedWriter.close();
+    }
+
+    public static ArrayList<String> lireEnregistrement(String nomBaseDonnees, Context context) throws IOException, JSONException {
+        File file = new File(context.getFilesDir(),nomBaseDonnees);
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = bufferedReader.readLine();
+        while (line != null){
+            stringBuilder.append(line).append("\n");
+            line = bufferedReader.readLine();
+        }
+        bufferedReader.close();
+        // This responce will have Json Format String
+        String responce = stringBuilder.toString();
+
+        JSONObject jsonObject  = new JSONObject(responce);
+        ArrayList<String> nomRecette = new ArrayList<>();
+        //Java Object
+        for(int i = 0 ;i<jsonObject.length();i++){
+            nomRecette.add(jsonObject.getString("Recette"+ i));
+        }
+
+        return nomRecette;
     }
 }

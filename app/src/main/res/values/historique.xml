@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="menuHistorique">Vos dernières recettes</string>
+    <string name="titre">Titre</string>
+    <string name="descriptionImage">Image d\'une recette</string>
 </resources>

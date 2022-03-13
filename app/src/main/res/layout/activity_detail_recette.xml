@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- LAYOUT PRINCIPAL -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
@@ -9,20 +9,39 @@
     android:layout_height="match_parent">
 
     <!--______HEADER______-->
-    <TextView
-        android:id="@+id/tv_detailsRecette"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:gravity="center|center_horizontal"
-        android:textColor="@color/white"
         android:background="@color/vert"
-        android:text="@string/detailsRecette" />
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_detailsRecette"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:background="@color/vert"
+            android:gravity="right|center_horizontal"
+            android:text="@string/detailsRecette"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/iv_favoris"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="30"
+            android:foregroundGravity="right"
+            app:srcCompat="@drawable/heart" />
+    </LinearLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="true"
+        android:layout_weight="1"
         android:orientation="vertical">
     <LinearLayout
 
@@ -35,12 +54,10 @@
 
         <!--__LAYOUT IMAGE + COURSE DESCRIPTION-->
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingHorizontal="10dp"
-            android:paddingTop="30dp"
             android:paddingBottom="15dp">
 
 
@@ -48,6 +65,7 @@
                 android:id="@+id/iv_imageRecette"
                 android:layout_width="200dp"
                 android:layout_height="180dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/customborder"
                 android:cropToPadding="true"
                 android:padding="5dp"
@@ -314,5 +332,5 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
 

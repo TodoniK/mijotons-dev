@@ -206,7 +206,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@color/transparent"
+                android:background="@drawable/customborder"
                 android:text="@string/texteBoutonFini" />
         </LinearLayout>
 

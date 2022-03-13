@@ -1,41 +1,29 @@
 package com.example.mijotons;
 
-import static java.lang.Thread.sleep;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mijotons.classBaseDonnees.aliment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.json.JSONException;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     Intent intent;
-
     private LinearLayout ll_fruits,ll_legumes,ll_viandes,ll_lait,ll_recherche,ll_menuG,ll_autre;
-    private EditText et_recherche;
 
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -63,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         Button b_autre = findViewById(R.id.b_autre);
         Button b_terminerChoixPlacards = findViewById(R.id.b_terminerChoixPlacards);
 
-        et_recherche = findViewById(R.id.et_recherche);
+        EditText et_recherche = findViewById(R.id.et_recherche);
 
         //Lire la base de données aliment et initializer les listes
         try {
