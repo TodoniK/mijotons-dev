@@ -1,7 +1,7 @@
 {
- "Fruits":["Citron","Abricot","Ananas","Banane","Cerise","Fraise","Figue","Myrtille"],
- "Produits_laitiers":["Fromage chevre","Fromage frais","Gruyère","Yaourt","Fromage","Creme fraiche","Lait","Beurre","Gruyere"],
- "Viandes_Poissons":["Chorizo","Viande hachée","Saucisses","Saumon","Poulet","Jambon","Boeuf","Agneau","Lapin","Dinde","Porc","Brochet","Anguille","Carpe","Turbo","Moules","Crevettes","Huitres","Langoustes"],
- "Legumes":["Poivron","Petits poids","Tomates cerises","Pommes de terre","Persil","Concombre","Patate douce","Potiron","Carotte","Salade","Oignon","Champignons","Ail","Artichaut","Asperge","Aubergine","Avocat","Betterave","Brocoli","Tomate"],
- "Autres":["Boulghour","Riz","Wrap","Pâtes","Sucre","Chocolat","Pain","Oeuf"]
+ "Fruits":["Fruits secs","Fruits rouges","Citron","Abricot","Ananas","Banane","Cerise","Fraise","Figue","Myrtille"],
+ "Produits_laitiers":["Chantilly","Fromage chevre","Fromage frais","Gruyère","Yaourt","Fromage","Creme fraiche","Lait","Beurre","Gruyere"],
+ "Viandes_Poissons":["Lardon","Chorizo","Viande hachée","Thon","Saucisses","Saumon","Poulet","Jambon","Boeuf","Agneau","Lapin","Dinde","Porc","Brochet","Anguille","Carpe","Turbo","Moules","Crevettes","Huitres","Langoustes"],
+ "Legumes":["Courgette","Poireau","Cornichon","Menthe","Thym","Mais","Pois chiche","Poivron","Petits poids","Herbes","Tomates cerises","Basilic","Ciboulette","Chou-fleur","Pommes de terre","Persil","Concombre","Patate douce","Potiron","Carotte","Salade","Oignon","Champignons","Ail","Artichaut","Asperge","Aubergine","Avocat","Betterave","Brocoli","Tomate"],
+ "Autres":["Farine","Miel","Quinoa","Gnocchis","Boulghour","Riz","Wrap","Pâtes","Sucre","Chocolat","Pain","Oeuf"]
 }

@@ -24,7 +24,7 @@ public class Chargement extends AppCompatActivity {
 
         //Initialisation de la liste des recettes
         try {
-            for (int i = 1;i<25;i++){
+            for (int i = 1;i<51;i++){
                 ListeRecette.listeRecette.add(readJson.readBaseRecette(getApplicationContext(),String.valueOf(i)));
             }
         } catch (IOException | JSONException e) {

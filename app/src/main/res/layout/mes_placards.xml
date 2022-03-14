@@ -36,7 +36,7 @@
             android:gravity="center|center_horizontal"
             android:hint="@string/defautRecherche"
             android:autofillHints="15"
-            android:inputType=""
+            android:inputType="text"
             tools:ignore="NestedWeights" />
 
         <LinearLayout

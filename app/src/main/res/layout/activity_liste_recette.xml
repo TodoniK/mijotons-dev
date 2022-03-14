@@ -43,7 +43,7 @@
                 android:layout_weight="50"
                 android:gravity="center|center_horizontal"
                 android:hint="@string/defautRecherche"
-                android:inputType="" />
+                android:inputType="text" />
 
             <Spinner
                 android:id="@+id/s_filtre"

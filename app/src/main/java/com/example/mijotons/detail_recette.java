@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,6 +28,7 @@ public class detail_recette extends AppCompatActivity {
     TextView tv_ingredient;
     TextView tv_nombrePersonnes;
     TextView tv_tempsPreparation;
+    ImageView iv_ajoutCourse;
 
     @SuppressLint({"NonConstantResourceId", "SetTextI18n"})
     @Override
@@ -41,7 +43,7 @@ public class detail_recette extends AppCompatActivity {
         iv_favoris = findViewById(R.id.iv_favoris);
         tv_nombrePersonnes = findViewById(R.id.tv_nombrePersonnes);
         tv_tempsPreparation = findViewById(R.id.tv_tempsPreparation);
-
+        iv_ajoutCourse = findViewById(R.id.iv_ajoutCourse);
 
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);
@@ -71,6 +73,14 @@ public class detail_recette extends AppCompatActivity {
             return true;
         });
 
+        iv_ajoutCourse.setOnClickListener(view -> {
+            for(int i = 0;i<recetteAfficher.getAliment().length;i++){
+                Courses.ajoutCourse(getApplicationContext(),recetteAfficher.getAliment()[i],recetteAfficher.getQuantite()[i]);
+            }
+            Toast.makeText(getApplicationContext(),"Ingrédients ajoutés aux courses",Toast.LENGTH_SHORT).show();
+        });
+
+
         iv_favoris.setOnClickListener(view -> {
             if(Favoris.checkPresence(recetteAfficher)){
                 Favoris.retirerFavoris(recetteAfficher);
@@ -97,8 +107,6 @@ public class detail_recette extends AppCompatActivity {
             iv_favoris.setImageResource(getResources().getIdentifier("heartred", "drawable", getPackageName()));
         }
 
-
-
         iv_imageRecette.setImageResource(getResources().getIdentifier(recetteAfficher.getImage(), "drawable", getPackageName()));
         tv_nomRecetteDetail.setText(recetteAfficher.getNom());
         tv_ingrediantsManquants.setText("Ingrédient(s) manquant(s) : "+ ListeRecette.filtre);
@@ -107,7 +115,7 @@ public class detail_recette extends AppCompatActivity {
         for(int i = 0 ;i < recetteAfficher.getAliment().length;i++)
         {
             tv_ingredient = findViewById(getResources().getIdentifier("tv_ingredient"+ (i + 1),"id",this.getPackageName()));
-            tv_ingredient.setText(recetteAfficher.getAliment()[i]);
+            tv_ingredient.setText(recetteAfficher.getQuantite()[i] + " " + recetteAfficher.getAliment()[i]);
             tv_ingredient.setVisibility(View.VISIBLE);
 
         }

@@ -22,47 +22,48 @@
         />
 
     <!-- _________CONTENUE DE LA PAGE___________ -->
-    <LinearLayout
-        android:orientation="vertical"
+
+
+    <EditText
+        android:id="@+id/et_champRecherche"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:autofillHints="15"
+        android:gravity="center|center_horizontal"
+        android:hint="@string/defautRecherche"
+        android:inputType="text" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="75dp"
-            android:layout_marginEnd="75dp"
-            android:autofillHints="15"
-            android:gravity="center|center_horizontal"
-            android:hint="@string/defautRecherche"
-            android:inputType=""/>
-
-        <Space
+    <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
 
             <CheckBox
-                android:id="@+id/toutSelectionner"
+                android:id="@+id/cb_toutSelectionner"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="@string/course_Bouton_Tout_Select"
-                tools:ignore="MissingConstraints" />
+                android:layout_height="wrap_content"
+                android:layout_weight="95"
+                android:text="@string/course_Bouton_Tout_Select" />
 
             <ImageButton
                 android:id="@+id/ajouterProduit"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
                 android:background="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="end"
                 app:srcCompat="@android:drawable/ic_input_add"
                 tools:ignore="MissingConstraints" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
         <!-- ____________FIN DU HEADER________________________ -->
 
@@ -71,9 +72,12 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/ll_course"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -81,59 +85,25 @@
                 <Space
                     android:id="@+id/diviseur1"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp">
+                    android:layout_height="10dp">
                 </Space>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="100"
-                    >
-
-                    <CheckBox
-                        android:id="@+id/produit1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Tomates cerises"
-                        android:layout_weight="70"
-                         />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="quantité"
-                        android:layout_weight="20"
-                        />
-
-                    <Spinner
-                        android:id="@+id/spinner1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="10"
-                        />
-
-
-
-                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/b_supp"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="Supprimer la séléction"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:textColor="#4E342E"
-            tools:ignore="MissingConstraints" />
+            android:text="Supprimer la sélection"
+            android:textColor="#4E342E" />
+        </LinearLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </LinearLayout>
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"

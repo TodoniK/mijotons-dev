@@ -5,7 +5,7 @@
 		"Quantite":["200g","2","150g"],
 		"Image":"patesbolognaise",
 		"Etape":"1.Cuire les pâtes \n2.Cuire la viande avec les tomates \n3.Mélanger",
-		"Temps":"15min",
+		"Temps":"20min",
 		"Personnes":2
 	},
 	"2":{
@@ -19,7 +19,7 @@
 	},
 	"3":{
 		"Nom":"Pâtes Pesto",
-		"Aliments":["Pâtes","Basilic","Ail","Huile"],
+		"Aliments":["Pâtes","Basilic","Ail"],
 		"Quantite":["200g","30g","20g","3cl"],
 		"Image":"patespesto",
 		"Etape":"1.Cuire les pâtes \n2.Mixer et mélanger basilic, ail et huile \n3.Melanger les pates avec la mixture.",
@@ -28,21 +28,21 @@
 	},
 	"4":{
 		"Nom":"Pâtes au saumon et aux champignons",
-		"Aliments":["Pâtes","Champignons","Oignon","Saumon","Yaourt","Herbe de Provence","Gruyère"],
-		"Quantite":["200g","4","1/2","4 tranches","1","quelques","100g"],
+		"Aliments":["Pâtes","Champignons","Oignon","Saumon","Yaourt","Gruyère"],
+		"Quantite":["200g","4","1/2","300g","1","150g","100g"],
 		"Image":"patessaumonchampignon",
 		"Etape":"1.Découper l'oignon en petit dés et les champignons aussi \n2.Les faire les revenir à la poêle. En parallèle faire chauffer l'eau pour les pâtes. \n3.Une fois les oignons et champignons cuits, rajoutez y le gruyère le yaourt avec des herbes de Provence ainsi que le saumon coupé en petits morceaux. \n4.Baisser le feux pour tenir le tout au chaud. Une fois que l'eau est chaude, plongez-y les pâtes ( 2-3 minutes). Une fois les pâtes prêtes, mélangez le tout dans une assiette.",
-		"Temps":"15min",
+		"Temps":"12min",
 		"Personnes":2
 	},
 	"5":{
 		"Nom":"Wrap frais au jambon",
 		"Aliments":["Wrap","Jambon","Fromage frais","Salade"],
-		"Quantite":["1","1 tranche","150g","100g"],
+		"Quantite":["1","80g","150g","100g"],
 		"Image":"wrapjambon",
 		"Etape":"1.Etaler le wrap \n2.Etaler le fromage sur le wrap \n3.Etaler la salade par dessus le fromage \n4.Enrouler le wrap",
-		"Temps":"15min",
-		"Personnes":2
+		"Temps":"10min",
+		"Personnes":1
 	},
 	"6":{
 		"Nom":"Tartine à l'avocat et au fromage frais",
@@ -50,16 +50,16 @@
 		"Quantite":["1","1","150g","100g"],
 		"Image":"tartineavocatfromage",
 		"Etape":"1.Mixer avocat et fromage frais \n2.Ajouter du jus de citron à la mixture \n3.Tartiner la mixture sur le pain grillé",
-		"Temps":"15min",
-		"Personnes":2
+		"Temps":"5min",
+		"Personnes":1
 	},
 	"7":{
 		"Nom":"Roulés façon pain perdu au nutella",
-		"Aliments":["Lait","Oeuf","Chocolat","Sucre","Pain","Huile"],
+		"Aliments":["Lait","Oeuf","Chocolat","Sucre","Pain"],
 		"Quantite":["50cl","1","150g","100g","1","10cl"],
 		"Image":"painperdunutella",
 		"Etape":"1.Découper la croute du pain \n2.Applatir le pain avec un rouleau \n3.Tartiner le pain avec le chocolat fondu \n4.Mélanger l'oeuf avec du lait dans un plat \n5.Tremper les roulés dans la mixture \n6.Faire frire les roulés",
-		"Temps":"15min",
+		"Temps":"20min",
 		"Personnes":2
 	},
 	"8":{
@@ -68,17 +68,17 @@
 		"Quantite":["4","2","100g","1","2"],
 		"Image":"rostipatatedouce",
 		"Etape":"1.Ciselez les oignons \n2.Pelez et râpez la patate douce et le potiron, les carottes. \n3.Ajouter les deux oeufs aux autres ingrédients \n4.Saupoudrer des epices que vous souhaitez \n5.Melanger et former des petites galettes \n6.Les faire cuire à la poêle",
-		"Temps":"15min",
+		"Temps":"30min",
 		"Personnes":2
 	},
 	"9":{
 		"Nom":"Baggels au saumon fumé et fromage à l'ail",
 		"Aliments":["Saumon","Fromage frais","Pain","Citron","Salade"],
-		"Quantite":["150gr","150g","4","1","1"],
+		"Quantite":["150g","150g","4","1","1"],
 		"Image":"baggelssaumonfromage",
 		"Etape":"1.Découper les baggels en deux et faites chauffer au grille-pain. \n2.Tartiner le fromage sur les 2 côtés du baggels \n3.Poser des tranches de saumon et mettez quelque gouttes de citron par dessus \n4.Enchaînez avec la salade et autre garniture de votre choix",
-		"Temps":"15min",
-		"Personnes":2
+		"Temps":"10min",
+		"Personnes":1
 	},
 	"10":{
 		"Nom":"Concombre à la crème",
@@ -92,11 +92,11 @@
 	"11":{
 		"Nom":"Oeufs brouillés au chèvre",
 		"Aliments":["Oeuf","Fromage chevre","Lait","Beurre"],
-		"Quantite":["12","Une buche","6 cuillères à soupe","1 noix"],
+		"Quantite":["12","150g","50cl","20g"],
 		"Image":"oeufsbrouillechevre",
 		"Etape":"1.Dans une terrine, cassez les œufs et battez-les en omelette. Ajoutez le lait, le beurre fondu tiédi, salez et poivrez. Émiettez le fromage de chèvre et ajoutez-le dans la préparation. Mélangez. \n2.Dans une poêle, faites fondre le beurre et versez les œufs au chèvre. Laissez cuire sur feu le plus doux possible en remuant sans cesse avec une cuillère ou une spatule en bois tout le temps de la cuisson. \n3. Retirez du feu lorsque les œufs ont une consistance crémeuse (pas trop sèche). \n4.Saupoudrez d'herbes selon vos goûts (thym, ciboulette, herbe de Provence...)",
-		"Temps":"15min",
-		"Personnes":2
+		"Temps":"10min",
+		"Personnes":1
 	},
 	"12":{
 		"Nom":"Pancakes",
@@ -104,31 +104,31 @@
 		"Quantite":["1","1","50g"],
 		"Image":"pancakes",
 		"Etape":"1.Écraser votre banane dans un bol. \n2.Ajouter l’œuf et battre. \n3. Ajouter le sucre \n4.Mettre de l'huile dans la poêle et faire cuire les pancakes.",
-		"Temps":"15min",
-		"Personnes":2
+		"Temps":"50min",
+		"Personnes":6
 	},
 	"13":{
 		"Nom":"Crêpe Jambon Fromage",
-		"Aliments":["Oeuf","Jambon","Fromage","Huile"],
-		"Quantite":["1","1","2 tranches","10 cl"],
+		"Aliments":["Oeuf","Jambon","Fromage"],
+		"Quantite":["1","1","180g","10cl"],
 		"Image":"crepejambonfromage",
 		"Etape":"1.Dans un bol, fouettez l’œuf à l'aide d'une fourchette. Salez, poivrez. \n2.Faites chauffer (de préférence dans une grande poêle) un filet d'huile d'olive et versez l’œuf battu de façon à faire une omelette très fine. \n3. Une fois la première face cuite, retournez à l'aide d'une spatule. \n4.Déposez la tranche de jambon puis au centre, les tranches de fromage. \n5.Roulez la crêpe et continuez à faire cuire jusqu'à ce que le fromage soit bien fondant.",
-		"Temps":"15min",
+		"Temps":"14min",
 		"Personnes":2
 	},
 	"14":{
 		"Nom":"Poulet au curry",
-		"Aliments":["Riz","Huile","Champignons","Persil","Oignon","Poulet","Curry","Creme fraiche"],
-		"Quantite":["10 cl","50g","une pincée","1","6 blancs","10g","20cl"],
+		"Aliments":["Riz","Champignons","Persil","Oignon","Poulet","Creme fraiche"],
+		"Quantite":["10cl","50g","5g","1","350g","10g","20cl"],
 		"Image":"pouletcurry",
 		"Etape":"1.Couper en petit dés les champignons, l'oignon et le poulet. Ajouter le persil et l'huile. Ajouter le curry. Mélanger. \n2.Mettre le tout à cuire. \n3. Une fois cuit, a feu doux, rajouter la creme fraiche. \n4.Faire cuire le riz, puis servir.",
-		"Temps":"15min",
+		"Temps":"25min",
 		"Personnes":2
 	},
 	"15":{
 		"Nom":"Salade de Pommes de Terre",
-		"Aliments":["Pommes de terre","Tomate cerise","Fromage","Jambon","Huile","Persil"],
-		"Quantite":["2","4","100g","2 tranches","10cl","10g"],
+		"Aliments":["Pommes de terre","Tomate cerise","Fromage","Jambon","Persil"],
+		"Quantite":["2","4","100g","40g","10cl","10g"],
 		"Image":"saladepommedeterre",
 		"Etape":"1.Faire cuire les pommes de terre à l'eau \n2.Couper les tomates cerises, le fromage, le jambon et le persil. Ajouter de l'huile et mélanger \n3. Une fois les pommes de terre cuites, les découper en petit dés et ajouter la mixture.",
 		"Temps":"15min",
@@ -137,7 +137,7 @@
 	"16":{
 		"Nom":"Pâtes au saumon fumé et petits poids",
 		"Aliments":["Saumon","Pâtes","Creme fraiche","Petits poids"],
-		"Quantite":["2 tranches","200g","100g","1 conserve"],
+		"Quantite":["150g","200g","100g","200g"],
 		"Image":"patessaumonpetitspoids",
 		"Etape":"1.Faire cuire les pâtes et les petits poids. \n2.Couper le saumon en fines lanières. \n3. Egouter les pâtes et les petits poids. \n4. Mélanger les 3 ingrédients en ajoutant de la crème fraiche, sel et poivre.",
 		"Temps":"15min",
@@ -149,40 +149,40 @@
 		"Quantite":["4","4","200g"],
 		"Image":"tacossaucisses",
 		"Etape":"1.Etaler la creme fraiche sur un wrap. \n2.Faire cuire les saucisses \n3. Enrouler la saucisse autour du wrap.",
-		"Temps":"15min",
-		"Personnes":2
+		"Temps":"8min",
+		"Personnes":1
 	},
 	"18":{
 		"Nom":"Jambon Monaco",
 		"Aliments":["Jambon","Tomate","Fromage"],
-		"Quantite":["2 tranches","2","100g"],
+		"Quantite":["110g","2","100g"],
 		"Image":"jambonmonaco",
 		"Etape":"1.Decouper les tomates en fines tranches \n2.Etaler la tranches de jambon dans la poele et y ajouter quelques tranches de tomates. \n3. Ajouter le fromage râpé par dessus et replier la tranche de jambon sur elle-même puis laisser cuire.",
-		"Temps":"15min",
-		"Personnes":2
+		"Temps":"7min",
+		"Personnes":1
 	},
 	"19":{
 		"Nom":"Poulet tandoori",
 		"Aliments":["Poulet","Citron","Yaourt"],
-		"Quantite":["3 escalopes","1","1"],
+		"Quantite":["600g","1","1"],
 		"Image":"poulettandoori",
 		"Etape":"1.Couper les escalopes en morceaux et les mettre dans un plat. Y ajouter la cuillère de moutarde, le jus de citron et les épices. Enfin, mettre le yaourt et tout mélanger. \n2.Couvrir le tout de film alimentaire et laisser mariner 1 à 2h OU faire cuire de suite dans une poêle avec un peu d'huile pendant 4 à 5mn.",
-		"Temps":"15min",
+		"Temps":"18min",
 		"Personnes":2
 	},
 	"20":{
 		"Nom":"Omelette jambon champignons fromage",
 		"Aliments":["Oeuf","Jambon","Fromage","Champignons"],
-		"Quantite":["2","1 tranche","50g","50g"],
+		"Quantite":["2","90g","50g","50g"],
 		"Image":"omelettechampignonfromage",
 		"Etape":"1.Dans une poêle anti-adhésive faire rêveur les champignons émincés. \n2.Ajouter la tranche de jambon coupée en lamelle. \n3.Dans un bol, fouetter les œufs avec le fromage râpé. \n4.Ajouter ce mélange dans la poêle et laisser cuire quelques minutes. \n5.Servir avec une salade verte par exemple",
-		"Temps":"15min",
+		"Temps":"12min",
 		"Personnes":2
 	},
 	"21":{
 		"Nom":"Concombre surprise",
 		"Aliments":["Concombre","Jambon","Creme fraiche","Salade"],
-		"Quantite":["1 gros","4 tranches","1 pot","50g"],
+		"Quantite":["1","260g","100g","50g"],
 		"Image":"concombresurprise",
 		"Etape":"1.Rincez le concombre et séchez-le. Coupez-le en 4 tronçons de taille identique. \n2.Coupez chaque tronçon en deux et videz les pépins à l'aide d'une petite cuillère. \n3.Garnissez chaque demi concombre d'une demi tranche de jambon et remplissez de fromage à l'aide d'une cuillère. \n4.Répétez l'opération pour toutes les moitiés et refermez les tronçons pour former un sandwich. \n5.Déposez-le sur une assiette de service et ajoutez un peu de mâche avec une sauce de salade.",
 		"Temps":"15min",
@@ -190,29 +190,263 @@
 	},
 	"22":{
 		"Nom":"Quesadillas",
-		"Aliments":["Wrap","Poulet","Creme fraiche","Fromage","Huile"],
-		"Quantite":["1 galette","4 blancs","100g","100g","10cl"],
+		"Aliments":["Wrap","Poulet","Creme fraiche","Fromage"],
+		"Quantite":["50g","350g","100g","100g","10cl"],
 		"Image":"quesadillas",
 		"Etape":"1.Couper le poulet en petits morceaux et le mélanger avec l'huile et des épices. \n2. Dans un wrap, étaler la crème fraiche et ajouter du fromage râpé par dessus. \n3. Faire cuire les morceaux de poulet \n4. Ajouter le poulet cuit dans le wrap \n5. Refermer le wrap et faire dorer chacune de ses faces à la poêle.",
-		"Temps":"15min",
+		"Temps":"35min",
 		"Personnes":2
 	},
 	"23":{
 		"Nom":"Buddha Bowl",
-		"Aliments":["Boulghour","Avocat","Concombre","Poivron","Fromage","Tomate cerise","Huile","Citron","Persil"],
-		"Quantite":["250g","1/2","1/4","1/4","100g","4","5 cas","1/2","20g"],
+		"Aliments":["Boulghour","Avocat","Concombre","Poivron","Fromage","Tomate cerise","Citron","Persil"],
+		"Quantite":["250g","1/2","1/4","1/4","100g","4","20cl","10g"],
 		"Image":"buddhabowl",
 		"Etape":"1.Cuire le boulgour (temps de cuisson indiqué sur votre boite). \n2. Pendant que le boulgour cuit, couper les légumes \n3. Préparer la sauce : ajouter dans un petit récipient 5 cuillères à soupe d'huile d'olive, le jus d'un demi citron, du sel et du poivre \n4. Mélanger le tout.",
-		"Temps":"15min",
+		"Temps":"28min",
 		"Personnes":2
 	},
 	"24":{
 		"Nom":"Tortilla au chorizo",
-		"Aliments":["Pommes de terre","Oeuf","Chorizo","Oignon","Persil","Huile"],
+		"Aliments":["Pommes de terre","Oeuf","Chorizo","Oignon","Persil"],
 		"Quantite":["4","6","80g","1","10g","10cl"],
 		"Image":"tortillachorizo",
 		"Etape":"1.Eplucher et couper en fines tranches les pommes de terre et l'oignon. \n2. Decouper en petits morceaux le chorizo. \n3. Dans une poele, faire revenir les pommes de terres et les oignons \n4. Fouetter les oeufs et saler poivrer. \n5. Ajouter le chorizo et les oeufs dans la poele. \n6. Faire cuire le tout.",
 		"Temps":"15min",
 		"Personnes":2
+	},
+	"25":{
+		"Nom":"Tartinade de saumon",
+		"Aliments":["Fromage frais","Saumon","Citron","Ciboulette"],
+		"Quantite":["200g","200g","1","10g"],
+		"Image":"tartinadesaumon",
+		"Etape":"1.Faire cuire une partie du saumon au micro-onde. \n2. Decouper en petits morceaux l'autre partie. \n3. Une fois prêt, mélanger les deux parties dans un saladier et les écraser. \n4. Ajouter citron, fromage, ciboulette, sel et poivre. Melangez le tout et servir sur des petits toasts/pains.",
+		"Temps":"10min",
+		"Personnes":2
+	},
+	"26":{
+		"Nom":"Croquettes de chou-fleur au four",
+		"Aliments":["Chou-fleur","Fromage","Oeuf","Persil"],
+		"Quantite":["400g","200g","1","10g"],
+		"Image":"croquetteschoufleur",
+		"Etape":"1.Couper le trognon du chou-fleur puis récupérer les fleurettes blanches. Rincer sous le robinet ou faire tremper dans une eau vinaigrée. \n2. Jeter les fleurettes dans un bouillon et faire cuire jusqu'à ce qu'elles soient très tendres. \n3. Préchauffer le four. \n4. Egouter et ecraser les à la fourchette les fleurettes de manière à former une purée. \n5. Ajouter dans un saladier, les fleurettes, le fromage, le persil, sel et poivre. \n6. Mélanger le tout. Former quelques petites croquettes et les faires cuire au four pendant une dizaine de minutes à 200°C.",
+		"Temps":"30min",
+		"Personnes":2
+	},
+	"27":{
+		"Nom":"Pommes de terre à la suédoise",
+		"Aliments":["Pomme de terre","Ail","Herbes"],
+		"Quantite":["4","20g","10g"],
+		"Image":"pommesdeterresuedoise",
+		"Etape":"1.Préchauffer le four à 200°C. Dans un ramequin, mélangez l'huile d'olive, l'ail haché, les épices ou herbes aromatiques que vous aimez. \n2. Lavez les pommes de terre, puis entaillez-les sans les couper entièrement, tous les 2 ou 3 millimètres. \n3. Déposez les pommes de terre dans un plat à four. Badigeonnez les pommes de terre avec le mélange d'huile et épices/herbes à l'aide d'un pinceau. \n4. Écartez un peu les lamelles pour y faire pénétrer un peu votre huile, à l'aide d'un couteau. \n5. Salez, poivrez, et placez les pommes de terre au four pendant 30 à 40 minutes, selon le type de pommes de terre. Servir.",
+		"Temps":"50min",
+		"Personnes":2
+	},
+	"28":{
+		"Nom":"Burger à la crème de Thon",
+		"Aliments":["Tomate","Pain","Thon","Oignon","Poivon","Fromage frais","Citron","Salade"],
+		"Quantite":["1","4","200g","1/2", "1/2", "400g", "1", "200g"],
+		"Image":"burgercremethon",
+		"Etape":"1.Decouper les crudités. Emieter le thon et melanger le tout dans un saladier. \n2. Badigeonnez les pains de fromage frais et ajouter des feuilles de salade \n3. Ajouter citron, sel, poivre et huile à la mixture \n4. Ajouter la mixture aux burgers.",
+		"Temps":"18min",
+		"Personnes":2
+	},
+	"29":{
+		"Nom":"Gnocchis tomates basilic",
+		"Aliments":["Gnocchis","Tomates","Fromage","Basilic"],
+		"Quantite":["200g","4","300g","50g"],
+		"Image":"gnocchistomatebasilic",
+		"Etape":"1.Mettre les gnocchis dans le bol et recouvrir d'eau bouillante 5 minutes. \n2. Découper les tomates et le basilic en petits morceaux. \n3. Mélanger le tout.",
+		"Temps":"10min",
+		"Personnes":1
+	},
+	"30":{
+		"Nom":"Riz pilaf au poulet et au poivron",
+		"Aliments":["Riz","Poulet","Poivron","Herbes","Beurre"],
+		"Quantite":["200g","200g","1","10g","30g"],
+		"Image":"rizpilafpouletpoivron",
+		"Etape":"1.Découper le poivron, le poulet et les herbes en petits morceaux. Saler, poivrer, huiler puis mélanger le tout. \n2. Faire revenir à la poêle le mélanger. En même temps, faire cuire le riz. \n3. Mélanger le tout.",
+		"Temps":"30min",
+		"Personnes":3
+	},
+	"31":{
+		"Nom":"Salade de quinoa et légumes estivaux",
+		"Aliments":["Quinoa","Concombre","Tomates","Poivron","Pois chiche"],
+		"Quantite":["240g","1","2","1","100g"],
+		"Image":"saladequinoalegumes",
+		"Etape":"1.Mettre le quinoa à cuire \n2. Couper les légumes en dés. \n3. Ajouter sel, poivre et huile d'olive. Mélanger le tout.",
+		"Temps":"10min",
+		"Personnes":1
+	},
+	"32":{
+		"Nom":"Salade de pâtes thon/maïs/gouda",
+		"Aliments":["Pâtes","Thon","Mais","Fromage"],
+		"Quantite":["250g","200g","100g","100g"],
+		"Image":"saladepatesthonmais",
+		"Etape":"1.Faire cuire vos pâtes selon le temps indiqué, les égoutter et les laisser refroidir. \n2. Dans un saladier, verser les grains de maïs égouttés au préalable. \n3. Écraser le thon avec une fourchette et le rajouter dans le saladier avec le maïs, les dés de gouda et mimolette et les pâtes. \n4. Saler, poivrer, assaisonner avec l'huile d'olive et le vinaigre balsamique.",
+		"Temps":"10min",
+		"Personnes":1
+	},
+	"33":{
+		"Nom":"Potage au vermicelle",
+		"Aliments":["Vermicelle","Oignon"],
+		"Quantite":["250g","2"],
+		"Image":"potagevermicelle",
+		"Etape":"1.Porter à ébullition 1l d'eau. \n2. Epluchez les oignons et coupez les en rondelles et ajoutez les. \n3. Ajouter 250 g de vermicelles ou de pâtes alphabet. \n4. Laisser cuire 8 mn à feux doux. Saler, poivrer.",
+		"Temps":"17min",
+		"Personnes":1
+	},
+	"34":{
+		"Nom":"Mousse au nutella",
+		"Aliments":["Chocolat","Creme fraiche", "Sucre"],
+		"Quantite":["12cl","30cl", "50g"],
+		"Image":"moussenutella",
+		"Etape":"1.Versez la crème dans un récipient et mélangez à l'aide d'un batteur électrique. \n2. Ajoutez ensuite le sucre, sans arrêter de fouetter. \n3. Incorporez ensuite le Nutella, mélangez jusqu'à obtention d'un mélange homogène. \n4.Remplissez les verrines et réservez au réfrigérateur une heure ou deux.",
+		"Temps":"13min",
+		"Personnes":1
+	},
+	"35":{
+		"Nom":"Roulé de jambon à la tomate",
+		"Aliments":["Jambon","Riz", "Tomate", "Creme fraiche", "Fromage"],
+		"Quantite":["200g","150g", "2", "100g", "30g"],
+		"Image":"roulejambontomate",
+		"Etape":"1.Faire préchauffer le four à 180°. Faire cuire le riz. \n2. Ecraser les tomates et melanger avec la crème dans une casserole et y incorporer le riz cuit. \n3. Dans un plat à gratin, placer une tranche de jambon, la garnir de riz à la tomate puis rouler le jambon et le refermer avec un cure-dent. Recommencer l'opération pour les autres tranches. \n4. Verser le sur-plus de riz dans le plat entre les tranches de jambons. \n5. Saupoudrer le gratin de fromage râpé. Enfournez 20 minutes à 180°.",
+		"Temps":"40min",
+		"Personnes":4
+	},
+	"36":{
+		"Nom":"Carottes thym-miel",
+		"Aliments":["Carotte","Beurre", "Thym", "Miel"],
+		"Quantite":["2","10g", "10g", "30g"],
+		"Image":"carottesthymmiel",
+		"Etape":"1. Eplucher et couper les carottes en rondelles ou en bâtonnets. \n2. Faire chauffer la casserole et y mettre les carottes et le beurre, mettre un couvercle. Au bout de 3min, diminuer le feu sur feu moyen. \n3. Une fois que les carottes commencent à s'attendrir, ajouter le miel et le thym (la quantité varie selon les gouts) et laisser cuire jusque ce que les carottes soient vraiment tendre et donc cuites.",
+		"Temps":"35min",
+		"Personnes":2
+	},
+	"37":{
+		"Nom":"Cake au thon",
+		"Aliments":["Farine","Oeuf", "Thon", "Lait", "Fromage"],
+		"Quantite":["150g","3", "200g", "10cl", "100g"],
+		"Image":"cakeauthon",
+		"Etape":"1. Préchauffez le four à 180°. \n2. Mélangez la farine dans un saladier. Ajoutez les oeufs, le lait et l'huile. \n3.Mélangez énergiquement sans faire de grumeaux. Effritez le thon et l'ajouter, ainsi que le fromage râpé. \n4.Mettre la pâte dans un moule à cake ( préalablement beurré et fariné ) et laisser au four pendant 40 minutes.",
+		"Temps":"50min",
+		"Personnes":3
+	},
+	"38":{
+		"Nom":"Chocolat chaud",
+		"Aliments":["Lait","Chocolat", "Chantilly"],
+		"Quantite":["200cl","100g", "1"],
+		"Image":"chocolatchaud",
+		"Etape":"1. Mettre un mug de lait à chauffer dans une casserole avec 2 carreaux de chocolat à dessert. \n2. Remuer avec la cuillère jusqu'à ce que les carreaux aient complètement fondu et que le lait prenne une jolie couleur marron clair. \n3.Verser dans le mug. Couvrir de chantilly. ",
+		"Temps":"5min",
+		"Personnes":1
+	},
+	"39":{
+		"Nom":"Cookie géant à la poêle",
+		"Aliments":["Oeuf","Sucre", "Beurre", "Farine", "Chocolat"],
+		"Quantite":["1","80g", "80g", "120g","100g"],
+		"Image":"cookiegeantpoele",
+		"Etape":"1. Mélanger tous les ingrédients sauf le chocolat. \n2. Dans une poêle chaude, mettre 1 cas de huile uniformément. \n3. Verser la pâte, aplatissez-la partout pour avoir la même épaisseur et disposez les carrés de chocolat. \n4. Laisser cuire à feu doux/moyen pendant 13/15 mn sans couvrir. Pas besoin de retourner.",
+		"Temps":"17min",
+		"Personnes":2
+	},
+	"40":{
+		"Nom":"Potatoes au four",
+		"Aliments":["Pomme de terre","Ail", "Persil"],
+		"Quantite":["1kg","10g", "10g"],
+		"Image":"potatoesaufour",
+		"Etape":"1. Laver les pommes de terre et les couper dans en deux dans la longueur. \n2. Les poser à plat et couper dans la longueur. \n3. Les placer dans un saladier et ajouter l'assaisonnement (soyez généreux!). \n4. Bien mélanger .Enfourner 40 minutes à 200°C.",
+		"Temps":"55min",
+		"Personnes":2
+	},
+	"41":{
+		"Nom":"Banana Bread",
+		"Aliments":["Farine","Banane", "Lait", "Sucre"],
+		"Quantite":["250gr","4", "70gr", "50gr"],
+		"Image":"bananebread",
+		"Etape":"1. Mélanger d'un côté la farine, le sucre, la levure et le sel et d'un autre les bananes écrasées, l'huile et le lait végétal. \n2. Combiner le tout. \n3. Verser dans un moule rectangulaire et cuire 55min à 175°C.",
+		"Temps":"60min",
+		"Personnes":4
+	},
+	"42":{
+		"Nom":"Poêlée maison aux saucisses de Francfort",
+		"Aliments":["Pomme de terre","Saucisse", "Oignon"],
+		"Quantite":["150g","1", "1"],
+		"Image":"poelemaisonsaucisse",
+		"Etape":"1. Épluchez les pommes de terre et coupez-les en dés de taille identique. Passez-les sous l'eau chaude et séchez dans un torchon propre. \n2. Faites bouillir une casserole d'eau et faites cuire la saucisse 20 minutes dans une eau frémissante. \n3. Épluchez et émincez l'oignon. \n4. Remplissez le fond de la sauteuse d'huile et faites-la chauffer. Versez les pommes de terre et faites les cuire en remuant très régulièrement durant une trentaine de minutes. \n5. Une fois qu'elles commencent à dorer, ajoutez l'oignon et jetez une petite poignée de gros sel. Mélangez., couvrez et baissez le feu. Ajouter un peu d'huile si le fond colle un peu. \n6. Couper la saucisse de Francfort en demi-rondelles et ajoutez-les dans la poêlée. Mélangez et rectifiez l'assaisonnement si besoin.",
+		"Temps":"25min",
+		"Personnes":2
+	},
+	"43":{
+		"Nom":"Tzatziki",
+		"Aliments":["Concombre","Ail", "Menthe", "Yaourt", "Citron"],
+		"Quantite":["1","1", "30g", "2", "1/2"],
+		"Image":"tzatziki",
+		"Etape":"1. Couper le concombre en dés et le faire dégorger 15 min. \n2. Le mettre dans un saladier, ajouter l'ail coupé finement, la menthe hachée, le jus de citron, mettre le yaourt, l'huile, le sel et le poivre, remuer et mettre au frais. \n3. Le servir très frais avec du pain ou tel quel en entrée possible aussi de le deguster dans un pain pitta en sandwich avec du poulet ou de l'agneau, concombre, tomates et salade fraîche.",
+		"Temps":"30min",
+		"Personnes":2
+	},
+	"44":{
+		"Nom":"Baguette tartiflette",
+		"Aliments":["Pain","Pomme de terre", "Lardon", "Creme fraiche", "Oignon", "Fromage", "Beurre"],
+		"Quantite":["1","10", "250gr", "200g", "1", "1", "50g"],
+		"Image":"baguettetartiflette",
+		"Etape":"1. Éplucher le pommes de terre, cuire à l'eau salée. \n2. Couper en lamelle les pommes de terre. \n3. Couper les oignons. \n4. Mettre sur feu doux une noix de beurre, y ajouter les oignions émincés avec les lardons. Dès que les lardons son cuits y ajouter la crème fraiche, le sel, le poivre et autres épices si vous le désirez (persil, muscade). \n5. Couper les baguettes en deux horizontalement. Beurrer les baguettes, surtout sur le côté, pour ne pas que ça brûle. \n6.Mettre sur les baguettes : les pommes de terre, puis les lardons avec la sauce et terminer avec un peu de reblochon au dessus de vos baguettes. \n7. Mettre au four pour faire fondre le fromage.",
+		"Temps":"30min",
+		"Personnes":2
+	},
+	"45":{
+		"Nom":"Piémontaise Maison",
+		"Aliments":["Tomates","Pomme de terre", "Oeuf", "Cornichon", "Jambon"],
+		"Quantite":["200g","300g", "2", "4", "100g"],
+		"Image":"piémontaisemaison",
+		"Etape":"1. On commence par cuir les pommes de terre (départ à l'eau froide) pendant environ 20 à 30 minutes selon la grosseur, Planter un couteau à l'intérieur des pommes de terre, si le couteau entre facilement vos pommes de terre sont cuites \n2. On égoutte les pommes de terre et on les refroidir totalement avant de les éplucher et de les couper en gros dès que l’on réserve dans un grand récipient. \n3. On va couper les cornichons en rondelles et les ajouter au saladier, puis couper les olives vertes en rondelles et ajouter au saladier (attention au doigt). Laver, épépiner, couper les tomates en petits cubes et mettre dans le saladier, même punition pour les dés de jambon. \n4. On va faire durcir les œufs pendant 10 minutes à l'eau bouillante, les mettre dans de l'eau froide quelques minutes, les écaler et les rajouter dans le saladier (ils doivent être totalement froids).",
+		"Temps":"50min",
+		"Personnes":4
+	},
+	"46":{
+		"Nom":"Soupe au légumes de grand-mère",
+		"Aliments":["Poireau","Courgette", "Carotte", "Tomate", "Creme fraiche"],
+		"Quantite":["1","1", "2", "1", "200g"],
+		"Image":"soupeauxlegumes",
+		"Etape":"1. Commencez par éplucher les légumes notamment les carottes et la courgette puis les couper en morceaux. \n2. Mettre les morceaux de légumes dans le blinder ou dans votre récipient. \n3. Ajoutez le bouillon de cube, la crème fraîche, le curcuma et l’eau à hauteur de la quantité de légumes. \n4.Mettre en route le blinder en fonction de vos fonctions ou votre récipient de façon à cuire les légumes. \n5. Mixer les légumes. ",
+		"Temps":"20min",
+		"Personnes":2
+	},
+	"47":{
+		"Nom":"Onigiri thon mayonnaise",
+		"Aliments":["Riz","Thon"],
+		"Quantite":["300g","150g"],
+		"Image":"onigirithonmayonnaise",
+		"Etape":"1. Laver, mouiller, frotter le riz sans l'écraser. Le couvrir d'eau et remuer. Jeter l'eau et réitérer l'opération jusqu'à ce que l'eau soit claire. \n2. Cuire le riz dans une casserole avec deux fois son volume en eau froide et porter à ébullition. Lorsque l'eau bout, remuer le riz hors du feu, réduire au minimum et laisser cuire 15 minutes à couvert. Retirer la casserole du feu et laisser poser 10 minutes. \n3. Melanger le thon avec le riz. \n4.Mouiller vos mains et faire des formes triangulaires avec le melange",
+		"Temps":"30min",
+		"Personnes":2
+	},
+	"48":{
+		"Nom":"Gaufres",
+		"Aliments":["Farine","Sucre", "Beurre", "Lait", "Oeuf"],
+		"Quantite":["250g","30g", "75g", "40cl", "3"],
+		"Image":"gaufres",
+		"Etape":"1. Dans un cul de poule, verser la farine, le sel, le sucre, le beurre fondu et refroidi et les jaunes d'oeufs. \n2. Mélanger le tout. Ajouter le lait petit a petit et fouetter jusqu'à obtenir une pâte liquide et homogène. \n3.Battre les blancs en neige. Les incorporer à la pâte. \n4. Faire chauffer votre appareil. Remplir les plaques et faire cuire.",
+		"Temps":"12min",
+		"Personnes":2
+	},
+	"49":{
+		"Nom":"Baguette pizza",
+		"Aliments":["Pain","Jambon", "Tomate", "Fromage"],
+		"Quantite":["1","200g", "2", "200g"],
+		"Image":"baguettepizza",
+		"Etape":"1. Coupez vôtre baguette en 3 morceaux, recoupez ces derniers en 2. \n2. Ecraser vos tomates et imbibez vos mini baguettes de celles-ci. \n3. Rajoutez-y des miettes de jambons, la mozzarella en dés et finissez avec votre gruyère. \n4. Au four pendant 20 minutes à 200°C.",
+		"Temps":"25min",
+		"Personnes":2
+	},
+	"50":{
+		"Nom":"Smoothie bowl aux fruits rouges",
+		"Aliments":["Fromage frais","Fruits rouges", "Miel", "Flocon avoine", "Fruits secs"],
+		"Quantite":["100g","100g", "5cl", "30g", "30g"],
+		"Image":"bowlfruitsrouges",
+		"Etape":"1. Verser le yaourt et les fruits surgelés dans le blender (avec le miel) et mixer pendant 2 bonnes minutes. La consistance doit être bien lisse et ressemble à un yaourt glacé. \n2. Dans un bol, déposer les 2/3 des flocons d'avoine dans le fond du bol. Verser par dessus le smoothie et bien lisser. \n3. En décoration déposer comme toping le reste de vos flocons d'avoine / les fruits secs de votre choix (noix, raisin, noix de coco) / quelques morceaux de fruits frais.",
+		"Temps":"7min",
+		"Personnes":1
 	}
 }

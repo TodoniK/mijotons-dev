@@ -39,12 +39,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:fillViewport="true"
         android:layout_weight="1"
         android:orientation="vertical">
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -134,18 +133,35 @@
             android:orientation="vertical"
             android:paddingBottom="15dp">
 
-            <TextView
-                android:id="@+id/tv_ingrediants"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center|center_horizontal|left"
-                android:paddingTop="5dp"
-                android:text="@string/ingrediants"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                android:textStyle="bold">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/tv_ingrediants"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_horizontal|left"
+                    android:paddingTop="5dp"
+                    android:layout_weight="90"
+                    android:text="@string/ingrediants"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
 
-            </TextView>
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/iv_ajoutCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:src="@android:drawable/ic_input_add"
+                    />
+
+            </LinearLayout>
+
 
             <LinearLayout
 
