@@ -16,6 +16,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class readJson {
@@ -97,5 +98,74 @@ public class readJson {
         }
 
         return nomRecette;
+    }
+
+    public static void enregistrementCourse(ArrayList<String> nom, ArrayList<Integer> quantite,ArrayList<String> suffixe,Context context) throws IOException {
+        JSONObject obj = new JSONObject() ;
+
+        try {
+            for(int i = 0 ;i<nom.size();i++){
+                obj.put("Nom"+ i,nom.get(i));
+                obj.put("Quantite"+i,quantite.get(i));
+                obj.put("Suffixe"+i,suffixe.get(i));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        String userString = obj.toString();
+        File file = new File(context.getFilesDir(),"Course");
+        FileWriter fileWriter = new FileWriter(file);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        bufferedWriter.write(userString);
+        bufferedWriter.close();
+    }
+
+    public static ArrayList<String> lireEnregistrementCourse(String nomArraylist, Context context) throws IOException, JSONException {
+        File file = new File(context.getFilesDir(),"Course");
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = bufferedReader.readLine();
+        while (line != null){
+            stringBuilder.append(line).append("\n");
+            line = bufferedReader.readLine();
+        }
+        bufferedReader.close();
+        // This responce will have Json Format String
+        String responce = stringBuilder.toString();
+
+        JSONObject jsonObject  = new JSONObject(responce);
+        ArrayList<String> arrayList = new ArrayList<>();
+        //Java Object
+        for(int i = 0 ;i<jsonObject.length()/3;i++){
+            arrayList.add(jsonObject.getString(nomArraylist+i));
+        }
+
+        return arrayList;
+    }
+
+    public static ArrayList<Integer> lireEnregistrementCourseQuantite(String nomArraylist, Context context) throws IOException, JSONException {
+        File file = new File(context.getFilesDir(),"Course");
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = bufferedReader.readLine();
+        while (line != null){
+            stringBuilder.append(line).append("\n");
+            line = bufferedReader.readLine();
+        }
+        bufferedReader.close();
+        // This responce will have Json Format String
+        String responce = stringBuilder.toString();
+
+        JSONObject jsonObject  = new JSONObject(responce);
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        //Java Object
+        for(int i = 0 ;i<jsonObject.length()/3;i++){
+            arrayList.add(jsonObject.getInt(nomArraylist+i));
+        }
+
+        return arrayList;
     }
 }

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,8 +23,12 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static boolean ajoutCourse = false;
     Intent intent;
     private LinearLayout ll_fruits,ll_legumes,ll_viandes,ll_lait,ll_recherche,ll_menuG,ll_autre;
+    TextView tv_nomMenuPlacards;
+
+
 
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -52,12 +57,20 @@ public class MainActivity extends AppCompatActivity {
         Button b_terminerChoixPlacards = findViewById(R.id.b_terminerChoixPlacards);
 
         EditText et_recherche = findViewById(R.id.et_recherche);
+        tv_nomMenuPlacards = findViewById(R.id.tv_nomMenuPlacards);
 
         //Lire la base de données aliment et initializer les listes
-        try {
-            aliment.init(getApplicationContext());
-        } catch (JSONException | IOException e) {
-            e.printStackTrace();
+
+        if(ajoutCourse)
+        {
+            aliment.initCourse();
+            tv_nomMenuPlacards.setText("Ajoutez à vos courses");
+            b_terminerChoixPlacards.setText("Voir ma liste de courses !");
+        }
+        else
+        {
+            tv_nomMenuPlacards.setText("Choisissez vos aliments !");
+            b_terminerChoixPlacards.setText("Voir mes recettes !");
         }
 
         GridLayout gridLayoutF = new GridLayout(getApplicationContext());
@@ -80,10 +93,17 @@ public class MainActivity extends AppCompatActivity {
         gridLayoutA.setColumnCount(nbrColonne);
         gridLayoutA.setRowCount(aliment.autre.size()/2);
 
-
-
         mBottomNavigationView.setOnItemSelectedListener(item-> {
                 switch (item.getItemId()){
+                    case R.id.action_placards:
+                        if(ajoutCourse)
+                        {
+                            ajoutCourse=false;
+                            intent = new Intent(this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        break;
                     case R.id.action_historique:
                         intent = new Intent(this, Historique.class);
                         startActivity(intent);
@@ -117,10 +137,21 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException | IOException e) {
                     e.printStackTrace();
                 }
-                for(int i=0;i<aliment.fruits.size();i++)
+                if(!ajoutCourse)
                 {
-                    gridLayoutF.addView(aliment.fruits.get(i));
+                    for(int i=0;i<aliment.fruits.size();i++)
+                    {
+                        gridLayoutF.addView(aliment.fruits.get(i));
+                    }
                 }
+                else
+                {
+                    for(int i=0;i<aliment.fruitsCourse.size();i++)
+                    {
+                        gridLayoutF.addView(aliment.fruitsCourse.get(i));
+                    }
+                }
+
                 ll_fruits.addView(gridLayoutF);
             }
         });
@@ -138,9 +169,20 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException | IOException e) {
                     e.printStackTrace();
                 }
-                for(int i=0;i<aliment.lait.size();i++)
+
+                if(!ajoutCourse)
                 {
-                    gridLayoutPL.addView(aliment.lait.get(i));
+                    for (int i = 0; i < aliment.lait.size(); i++)
+                    {
+                        gridLayoutPL.addView(aliment.lait.get(i));
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < aliment.laitCourse.size(); i++)
+                    {
+                        gridLayoutPL.addView(aliment.laitCourse.get(i));
+                    }
                 }
                 ll_lait.addView(gridLayoutPL);
             }
@@ -159,10 +201,21 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException | IOException e) {
                     e.printStackTrace();
                 }
-                for(int i=0;i<aliment.viandes.size();i++)
+                if(!ajoutCourse)
                 {
-                   gridLayoutV.addView(aliment.viandes.get(i));
+                    for(int i=0;i<aliment.viandes.size();i++)
+                    {
+                        gridLayoutV.addView(aliment.viandes.get(i));
+                    }
                 }
+                else
+                {
+                    for(int i=0;i<aliment.viandesCourse.size();i++)
+                    {
+                        gridLayoutV.addView(aliment.viandesCourse.get(i));
+                    }
+                }
+
                 ll_viandes.addView(gridLayoutV);
             }
         });
@@ -180,9 +233,19 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException | IOException e) {
                     e.printStackTrace();
                 }
-                for(int i=0;i<aliment.legumes.size();i++)
+                if(!ajoutCourse)
                 {
-                    gridLayoutL.addView(aliment.legumes.get(i));
+                    for(int i=0;i<aliment.legumes.size();i++)
+                    {
+                        gridLayoutL.addView(aliment.legumes.get(i));
+                    }
+                }
+                else
+                {
+                    for(int i=0;i<aliment.legumesCourse.size();i++)
+                    {
+                        gridLayoutL.addView(aliment.legumesCourse.get(i));
+                    }
                 }
 
                 ll_legumes.addView(gridLayoutL);
@@ -202,9 +265,19 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException | IOException e) {
                     e.printStackTrace();
                 }
-                for(int i=0;i<aliment.autre.size();i++)
+                if(!ajoutCourse)
                 {
-                    gridLayoutA.addView(aliment.autre.get(i));
+                    for(int i=0;i<aliment.autre.size();i++)
+                    {
+                        gridLayoutA.addView(aliment.autre.get(i));
+                    }
+                }
+                else
+                {
+                    for(int i=0;i<aliment.autreCourse.size();i++)
+                    {
+                        gridLayoutA.addView(aliment.autreCourse.get(i));
+                    }
                 }
 
                 ll_autre.addView(gridLayoutA);
@@ -214,19 +287,28 @@ public class MainActivity extends AppCompatActivity {
         //bouton j'ai finis
         b_terminerChoixPlacards.setOnClickListener(view -> {
             aliment.initCocher();
-            gridLayoutF.removeAllViews();
-            gridLayoutL.removeAllViews();
-            gridLayoutPL.removeAllViews();
-            gridLayoutV.removeAllViews();
-            gridLayoutA.removeAllViews();
-            ll_legumes.removeAllViews();
-            ll_viandes.removeAllViews();
-            ll_lait.removeAllViews();
-            ll_fruits.removeAllViews();
-            ll_autre.removeAllViews();
+            if(ajoutCourse)
+            {
+                intent = new Intent(this, Courses.class);
+                startActivity(intent);
+            }
+            else
+            {
+                /*
+                gridLayoutF.removeAllViews();
+                gridLayoutL.removeAllViews();
+                gridLayoutPL.removeAllViews();
+                gridLayoutV.removeAllViews();
+                gridLayoutA.removeAllViews();
+                ll_legumes.removeAllViews();
+                ll_viandes.removeAllViews();
+                ll_lait.removeAllViews();
+                ll_fruits.removeAllViews();
+                ll_autre.removeAllViews();*/
 
-            intent = new Intent(this, ListeRecette.class);
-            startActivity(intent);
+                intent = new Intent(this, ListeRecette.class);
+                startActivity(intent);
+            }
 
         });
 
@@ -256,35 +338,71 @@ public class MainActivity extends AppCompatActivity {
                     } catch (JSONException | IOException e) {
                         e.printStackTrace();
                     }
-                    for (int indice = 0; indice < aliment.fruits.size(); indice++) {
-                        if (aliment.nomFruits[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
-                            ll_recherche.addView(aliment.fruits.get(indice));
+                    if(!ajoutCourse)
+                    {
+                        for (int indice = 0; indice < aliment.fruits.size(); indice++) {
+                            if (aliment.nomFruits[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.fruits.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.viandes.size(); indice++) {
+                            if (aliment.nomViandes[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.viandes.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.legumes.size(); indice++) {
+                            if (aliment.nomLegumes[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.legumes.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.lait.size(); indice++) {
+                            if (aliment.nomLait[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.lait.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.autre.size(); indice++) {
+                            if (aliment.nomAutre[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.autre.get(indice));
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (int indice = 0; indice < aliment.fruitsCourse.size(); indice++) {
+                            if (aliment.nomFruits[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.fruitsCourse.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.viandesCourse.size(); indice++) {
+                            if (aliment.nomViandes[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.viandesCourse.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.legumesCourse.size(); indice++) {
+                            if (aliment.nomLegumes[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.legumesCourse.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.laitCourse.size(); indice++) {
+                            if (aliment.nomLait[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.laitCourse.get(indice));
+                            }
+                        }
+
+                        for (int indice = 0; indice < aliment.autreCourse.size(); indice++) {
+                            if (aliment.nomAutre[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
+                                ll_recherche.addView(aliment.autreCourse.get(indice));
+                            }
                         }
                     }
 
-                    for (int indice = 0; indice < aliment.viandes.size(); indice++) {
-                        if (aliment.nomViandes[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
-                            ll_recherche.addView(aliment.viandes.get(indice));
-                        }
-                    }
-
-                    for (int indice = 0; indice < aliment.legumes.size(); indice++) {
-                        if (aliment.nomLegumes[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
-                            ll_recherche.addView(aliment.legumes.get(indice));
-                        }
-                    }
-
-                    for (int indice = 0; indice < aliment.lait.size(); indice++) {
-                        if (aliment.nomLait[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
-                            ll_recherche.addView(aliment.lait.get(indice));
-                        }
-                    }
-
-                    for (int indice = 0; indice < aliment.autre.size(); indice++) {
-                        if (aliment.nomAutre[indice].toUpperCase().startsWith(charSequence.toString().toUpperCase())) {
-                            ll_recherche.addView(aliment.autre.get(indice));
-                        }
-                    }
 
                 }
                 else if (charSequence.length() == 0 )

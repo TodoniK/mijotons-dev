@@ -75,7 +75,7 @@ public class detail_recette extends AppCompatActivity {
 
         iv_ajoutCourse.setOnClickListener(view -> {
             for(int i = 0;i<recetteAfficher.getAliment().length;i++){
-                Courses.ajoutCourse(getApplicationContext(),recetteAfficher.getAliment()[i],recetteAfficher.getQuantite()[i]);
+                Courses.ajoutCourse(recetteAfficher.getAliment()[i],recetteAfficher.getQuantite()[i]);
             }
             Toast.makeText(getApplicationContext(),"Ingrédients ajoutés aux courses",Toast.LENGTH_SHORT).show();
         });

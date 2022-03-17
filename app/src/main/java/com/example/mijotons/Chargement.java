@@ -6,6 +6,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mijotons.classBaseDonnees.aliment;
 import com.example.mijotons.classBaseDonnees.readJson;
 import com.example.mijotons.classBaseDonnees.recette;
 
@@ -48,11 +49,20 @@ public class Chargement extends AppCompatActivity {
                    }
                }
            }
+           Courses.listeNom = readJson.lireEnregistrementCourse("Nom",getApplicationContext());
+           Courses.listeQuantite = readJson.lireEnregistrementCourseQuantite("Quantite",getApplicationContext());
+           Courses.listeSuffixe = readJson.lireEnregistrementCourse("Suffixe",getApplicationContext());
         } catch (IOException | JSONException e) {
             e.printStackTrace();
         }
+       try {
+           aliment.init(getApplicationContext());
+       } catch (JSONException | IOException e) {
+           e.printStackTrace();
+       }
 
-        Runnable runnable = () -> {
+
+            Runnable runnable = () -> {
             Intent intent = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(intent);
             finish();

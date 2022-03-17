@@ -48,9 +48,9 @@
             <Spinner
                 android:id="@+id/s_filtre"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:entries="@array/listeFiltre"/>
+                android:entries="@array/listeFiltre" />
         </LinearLayout>
 
 
