@@ -124,6 +124,9 @@ public class Courses extends AppCompatActivity {
             {
                 et_champRecherche.setText("");
             }
+            if(cb_toutSelectionner.isChecked()){
+                cb_toutSelectionner.setChecked(false);
+            }
 
             try {
                 readJson.enregistrementCourse(listeNom,listeQuantite,listeSuffixe,getApplicationContext());
@@ -145,7 +148,7 @@ public class Courses extends AppCompatActivity {
                 {
                     for(CheckBox cb : listeCheckBox)
                     {
-                        if(cb.getText().toString().startsWith(charSequence.toString()))
+                        if(cb.getText().toString().toUpperCase().startsWith(charSequence.toString().toUpperCase()))
                         {
                             listeLinearLayoutRecherche.add(listeLinearLayout.get(listeCheckBox.indexOf(cb)));
                         }
@@ -197,6 +200,7 @@ public class Courses extends AppCompatActivity {
         }
 
         initCourse();
+
         try {
             readJson.enregistrementCourse(listeNom,listeQuantite,listeSuffixe,getApplicationContext());
         } catch (IOException e) {
@@ -206,17 +210,23 @@ public class Courses extends AppCompatActivity {
 
 
     public static void ajoutCourse(String nom,String quantite){
-
-        if(listeNom.contains(nom)){
+        boolean presence = false;
+        int position = 0;
+        for(String unNom : listeNom)
+        {
+            if(unNom.equals(nom)){
+                presence = true;
+                position = listeNom.indexOf(unNom);
+            }
+        }
+        if(presence){
             String regex = "";
             Pattern p = Pattern.compile("[0-9]");
             Matcher matcher = p.matcher(quantite);
             while(matcher.find()){
                 regex += matcher.group();
             }
-
-            int index = listeNom.indexOf(nom);
-            listeQuantite.set(index,listeQuantite.get(index)+Integer.parseInt(regex));
+            listeQuantite.set(position,listeQuantite.get(position)+Integer.parseInt(regex));
         }
         else
         {
@@ -263,6 +273,32 @@ public class Courses extends AppCompatActivity {
             EditText editText =  new EditText(getApplicationContext());
             editText.setText(String.valueOf(listeQuantite.get(i)));
             editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+            editText.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
+                {
+
+                }
+
+                @Override
+                public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
+                {
+
+                }
+
+                @Override
+                public void afterTextChanged(Editable editable)
+                {
+                    try {
+                        if(!editable.toString().equals("")){
+                            listeQuantite.set(listeCheckBox.indexOf(checkBox),Integer.parseInt(editable.toString()));
+                            readJson.enregistrementCourse(listeNom,listeQuantite,listeSuffixe,getApplicationContext());
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
             TextView textView = new TextView(getApplicationContext());
             textView.setText(listeSuffixe.get(i));
             textView.setGravity(Gravity.CENTER);

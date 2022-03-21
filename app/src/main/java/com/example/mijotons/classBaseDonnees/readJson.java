@@ -1,6 +1,7 @@
 package com.example.mijotons.classBaseDonnees;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.example.mijotons.R;
 
@@ -102,7 +103,6 @@ public class readJson {
 
     public static void enregistrementCourse(ArrayList<String> nom, ArrayList<Integer> quantite,ArrayList<String> suffixe,Context context) throws IOException {
         JSONObject obj = new JSONObject() ;
-
         try {
             for(int i = 0 ;i<nom.size();i++){
                 obj.put("Nom"+ i,nom.get(i));
@@ -162,7 +162,8 @@ public class readJson {
         JSONObject jsonObject  = new JSONObject(responce);
         ArrayList<Integer> arrayList = new ArrayList<>();
         //Java Object
-        for(int i = 0 ;i<jsonObject.length()/3;i++){
+        for(int i = 0 ;i<jsonObject.length()/3;i++)
+        {
             arrayList.add(jsonObject.getInt(nomArraylist+i));
         }
 

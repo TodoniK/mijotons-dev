@@ -77,6 +77,11 @@ public class detail_recette extends AppCompatActivity {
             for(int i = 0;i<recetteAfficher.getAliment().length;i++){
                 Courses.ajoutCourse(recetteAfficher.getAliment()[i],recetteAfficher.getQuantite()[i]);
             }
+            try {
+                readJson.enregistrementCourse(Courses.listeNom,Courses.listeQuantite,Courses.listeSuffixe,getApplicationContext());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             Toast.makeText(getApplicationContext(),"Ingrédients ajoutés aux courses",Toast.LENGTH_SHORT).show();
         });
 

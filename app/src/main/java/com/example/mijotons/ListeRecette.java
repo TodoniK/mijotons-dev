@@ -187,7 +187,7 @@ public class ListeRecette extends AppCompatActivity {
                     compteur++;
                 }
             }
-            if ((compteur + filtre) >= quantite){
+            if ((compteur + filtre) == quantite && compteur != 0){
                 listeRecetteAfficher.add(rec);
             }
         }

@@ -23,6 +23,14 @@ public class Chargement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chargement);
 
+
+        //aliment
+        try {
+            aliment.init(getApplicationContext());
+        } catch (JSONException | IOException e) {
+            e.printStackTrace();
+        }
+
         //Initialisation de la liste des recettes
         try {
             for (int i = 1;i<51;i++){
@@ -32,6 +40,7 @@ public class Chargement extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        //Historique et favoris
        try {
            ArrayList<String> listeNomFavoris = readJson.lireEnregistrement("Favoris",getApplicationContext());
            for(int i=listeNomFavoris.size()-1 ;i>=0;i--){
@@ -49,24 +58,26 @@ public class Chargement extends AppCompatActivity {
                    }
                }
            }
+
+        } catch (IOException | JSONException e) {
+            e.printStackTrace();
+       }
+
+       //Course
+       try{
            Courses.listeNom = readJson.lireEnregistrementCourse("Nom",getApplicationContext());
            Courses.listeQuantite = readJson.lireEnregistrementCourseQuantite("Quantite",getApplicationContext());
            Courses.listeSuffixe = readJson.lireEnregistrementCourse("Suffixe",getApplicationContext());
-        } catch (IOException | JSONException e) {
-            e.printStackTrace();
-        }
-       try {
-           aliment.init(getApplicationContext());
-       } catch (JSONException | IOException e) {
+       }catch (JSONException | IOException e){
            e.printStackTrace();
        }
 
 
-            Runnable runnable = () -> {
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(intent);
-            finish();
-        };
+       Runnable runnable = () -> {
+           Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+           startActivity(intent);
+           finish();
+       };
         int DUREE_ECRAN_CHARGEMENT = 3000;
         new Handler().postDelayed(runnable, DUREE_ECRAN_CHARGEMENT);
 
