@@ -5,8 +5,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/LayoutPrincipal"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Carte">
+
+
+
 
     <TextView
         android:id="@+id/tv_nomMenuCarte"
@@ -16,15 +20,21 @@
         android:textColor="@color/white"
         android:background="@color/vert"
         android:textSize="25dp"
-        android:text="Menu Carte" />
+        android:text="Trouver votre restaurant" />
 
 
-    <com.google.android.gms.maps.MapView
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/carte"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        tools:context="com.example.currentplacedetailsonmap.MapsActivityCurrentPlace" />
+
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationBar"

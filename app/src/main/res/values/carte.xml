@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="map_key" translatable="false">
+         AIzaSyAaRJFQACeYU4eyE8TJrsznVjX8XsZg8xA
+    </string>
+
+    <string name="option_recup_endroit"> Trouver votre restaurant </string>
+</resources>
