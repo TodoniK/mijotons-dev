@@ -267,7 +267,7 @@ public class Courses extends AppCompatActivity {
         for(int i=0 ; i<listeNom.size();i++)
         {
             LinearLayout linearLayout = new LinearLayout(getApplicationContext());
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT,0.7f);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT,0.7f);
             CheckBox checkBox = new CheckBox(getApplicationContext());
             checkBox.setText(listeNom.get(i));
             EditText editText =  new EditText(getApplicationContext());
@@ -304,9 +304,9 @@ public class Courses extends AppCompatActivity {
             textView.setGravity(Gravity.CENTER);
             textView.setTextSize(20);
             linearLayout.addView(checkBox,layoutParams);
-            layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT,0.2f);
+            layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT,0.2f);
             linearLayout.addView(editText,layoutParams);
-            layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT,0.1f);
+            layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT,0.1f);
             linearLayout.addView(textView,layoutParams);
             listeCheckBox.add(checkBox);
             listeLinearLayout.add(linearLayout);

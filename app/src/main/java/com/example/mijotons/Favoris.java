@@ -6,7 +6,10 @@ import static android.view.Gravity.CENTER_HORIZONTAL;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,10 +30,12 @@ public class Favoris extends AppCompatActivity {
     TextView tv_temps;
     TextView tv_ingredient;
     TextView tv_nbrPersonne;
+    EditText et_recherche;
     LinearLayout ll_favoris;
     LinearLayout ll_rien;
 
     static ArrayList<recette> listeFavoris = new ArrayList<>();
+    ArrayList<recette> listeFavorisRecherche = new ArrayList<>();
 
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -40,6 +45,7 @@ public class Favoris extends AppCompatActivity {
 
         ll_favoris = findViewById(R.id.ll_favoris);
         ll_rien = findViewById(R.id.ll_rien);
+        et_recherche = findViewById(R.id.et_recherche);
 
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);
@@ -65,7 +71,42 @@ public class Favoris extends AppCompatActivity {
             return true;
         });
 
-        initFavoris();
+        et_recherche.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if(charSequence.length() != 0)
+                {
+                    listeFavorisRecherche.clear();
+                    visibilite();
+                    for(recette rec : listeFavoris)
+                    {
+                        if(rec.getNom().toUpperCase().startsWith(charSequence.toString().toUpperCase()))
+                        {
+                            listeFavorisRecherche.add(listeFavoris.get(listeFavoris.indexOf(rec)));
+                        }
+                    }
+                    initFavoris(true);
+                }
+                else
+                {
+                    initFavoris(false);
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+
+        initFavoris(false);
     }
 
     public static void ajoutFavoris(recette rec){
@@ -107,42 +148,79 @@ public class Favoris extends AppCompatActivity {
 
 
     @SuppressLint("SetTextI18n")
-    public void initFavoris()
+    public void initFavoris(boolean recherche)
     {
-        if(listeFavoris.size() == 0)
+        if(!recherche)
         {
-            TextView tv_rien = new TextView(getApplicationContext());
-            tv_rien.setText("Pas de favoris");
-            tv_rien.setGravity(CENTER_HORIZONTAL);
-            tv_rien.setTextSize(20);
-            ll_rien.addView(tv_rien);
-        }
-        else {
-            for (int i = 0; i < listeFavoris.size(); i++) {
-                LinearLayout ll_recette = findViewById(getResources().getIdentifier("ll_recette" + i, "id", this.getPackageName()));
-                ll_recette.setVisibility(View.VISIBLE);
-                int finalI = i;
-                ll_recette.setOnClickListener(view -> {
-                    detail_recette.recetteAfficher = listeFavoris.get(finalI);
-                    intent = new Intent(getApplicationContext(), detail_recette.class);
-                    startActivity(intent);
-                });
-                iv_image = findViewById(getResources().getIdentifier("iv_image" + i, "id", this.getPackageName()));
-                iv_image.setImageResource(getResources().getIdentifier(listeFavoris.get(i).getImage(), "drawable", getPackageName()));
-                tv_titre = findViewById(getResources().getIdentifier("titre" + i, "id", this.getPackageName()));
-                tv_titre.setText(listeFavoris.get(i).getNom());
-                tv_temps = findViewById(getResources().getIdentifier("temps"+ i,"id",this.getPackageName()));
-                tv_temps.setText("Temps : "+listeFavoris.get(i).getTemps());
-                tv_nbrPersonne = findViewById(getResources().getIdentifier("tv_nbrPersonne"+ i,"id",this.getPackageName()));
-                tv_nbrPersonne.setText("Nombre de Personne : "+listeFavoris.get(i).getNbrPersonne());
-
-
-                for (int j = 0; j < listeFavoris.get(i).getAliment().length; j++) {
-                    tv_ingredient = findViewById(getResources().getIdentifier("tv_ingredient" + (j + 6 * i), "id", this.getPackageName()));
-                    tv_ingredient.setText(listeFavoris.get(i).getAliment()[j]);
-                    tv_ingredient.setVisibility(View.VISIBLE);
+            if(listeFavoris.size() == 0)
+            {
+                TextView tv_rien = new TextView(getApplicationContext());
+                tv_rien.setText("Pas de favoris");
+                tv_rien.setGravity(CENTER_HORIZONTAL);
+                tv_rien.setTextSize(20);
+                ll_rien.addView(tv_rien);
+            }
+            else
+            {
+                ll_rien.removeAllViews();
+                for(int i=0;i<listeFavoris.size();i++)
+                {
+                    remplirFavoris(listeFavoris.get(i),i);
                 }
             }
+        }
+        else
+        {
+            if(listeFavorisRecherche.size() == 0)
+            {
+                TextView tv_rien = new TextView(getApplicationContext());
+                tv_rien.setText("Pas de favoris");
+                tv_rien.setGravity(CENTER_HORIZONTAL);
+                tv_rien.setTextSize(20);
+                ll_rien.addView(tv_rien);
+            }
+            else
+            {
+                ll_rien.removeAllViews();
+                for(int i=0;i<listeFavorisRecherche.size();i++)
+                {
+                    remplirFavoris(listeFavorisRecherche.get(i),i);
+                }
+            }
+        }
+    }
+
+    public void remplirFavoris(recette recette,int indice)
+    {
+        LinearLayout ll_recette = findViewById(getResources().getIdentifier("ll_recette"+indice,"id",this.getPackageName()));
+        ll_recette.setVisibility(View.VISIBLE);
+        ll_recette.setOnClickListener(view -> {
+            detail_recette.recetteAfficher = recette;
+            intent = new Intent(getApplicationContext(), detail_recette.class);
+            startActivity(intent);
+        });
+        iv_image = findViewById(getResources().getIdentifier("iv_image"+ indice,"id",this.getPackageName()));
+        iv_image.setImageResource(getResources().getIdentifier(recette.getImage(), "drawable", getPackageName()));
+        tv_titre = findViewById(getResources().getIdentifier("titre"+ indice,"id",this.getPackageName()));
+        tv_titre.setText(recette.getNom());
+        tv_temps = findViewById(getResources().getIdentifier("temps"+ indice,"id",this.getPackageName()));
+        tv_temps.setText("Temps : "+recette.getTemps());
+        tv_nbrPersonne = findViewById(getResources().getIdentifier("tv_nbrPersonne"+ indice,"id",this.getPackageName()));
+        tv_nbrPersonne.setText("Nombre de Personne : "+recette.getNbrPersonne());
+
+        for(int j = 0 ;j < recette.getAliment().length;j++)
+        {
+            tv_ingredient = findViewById(getResources().getIdentifier("tv_ingredient"+ (j + 6 * indice),"id",this.getPackageName()));
+            tv_ingredient.setText(recette.getAliment()[j]);
+            tv_ingredient.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void visibilite(){
+        for(int i = 0; i<20;i++)
+        {
+            LinearLayout ll_recette = findViewById(getResources().getIdentifier("ll_recette"+i,"id",this.getPackageName()));
+            ll_recette.setVisibility(View.INVISIBLE);
         }
     }
 }
