@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         Button b_legumes = findViewById(R.id.b_legumes);
         Button b_lait = findViewById(R.id.b_lait);
         Button b_terminerChoixPlacards = findViewById(R.id.b_terminerChoixPlacards);
+
 
 
         mBottomNavigationView.setOnItemSelectedListener(item-> {

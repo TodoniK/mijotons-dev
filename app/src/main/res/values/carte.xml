@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+
+    <string name="map_key" translatable="false">
+         AIzaSyAaRJFQACeYU4eyE8TJrsznVjX8XsZg8xA
+    </string>
+
+    <string name="option_recup_endroit"> Trouver votre restaurant </string>
 </resources>
