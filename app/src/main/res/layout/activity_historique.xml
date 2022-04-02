@@ -53,6 +53,7 @@
 
 
         <ScrollView
+            android:id="@+id/sv_historique"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:fillViewport="true"
@@ -78,13 +79,14 @@
                         android:id="@+id/iv_image0"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -97,6 +99,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"
@@ -114,7 +117,8 @@
                             android:id="@+id/tv_nbrPersonne0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -240,13 +244,14 @@
                         android:id="@+id/iv_image1"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -259,6 +264,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -275,7 +281,8 @@
                             android:id="@+id/tv_nbrPersonne1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -401,13 +408,14 @@
                         android:id="@+id/iv_image2"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -420,6 +428,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -437,7 +446,8 @@
                             android:id="@+id/tv_nbrPersonne2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -566,13 +576,14 @@
                         android:id="@+id/iv_image3"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -585,6 +596,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -602,7 +614,8 @@
                             android:id="@+id/tv_nbrPersonne3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -729,13 +742,14 @@
                         android:id="@+id/iv_image4"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -748,6 +762,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -765,7 +780,8 @@
                             android:id="@+id/tv_nbrPersonne4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -892,13 +908,14 @@
                         android:id="@+id/iv_image5"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -911,6 +928,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -928,7 +946,8 @@
                             android:id="@+id/tv_nbrPersonne5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -1055,13 +1074,14 @@
                         android:id="@+id/iv_image6"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -1074,6 +1094,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1091,7 +1112,8 @@
                             android:id="@+id/tv_nbrPersonne6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -1218,13 +1240,14 @@
                         android:id="@+id/iv_image7"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -1237,6 +1260,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1254,7 +1278,8 @@
                             android:id="@+id/tv_nbrPersonne7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -1381,13 +1406,14 @@
                         android:id="@+id/iv_image8"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -1400,6 +1426,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1417,7 +1444,8 @@
                             android:id="@+id/tv_nbrPersonne8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -1543,13 +1571,14 @@
                         android:id="@+id/iv_image9"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -1562,6 +1591,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1579,7 +1609,8 @@
                             android:id="@+id/tv_nbrPersonne9"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -1705,13 +1736,14 @@
                         android:id="@+id/iv_image10"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -1724,6 +1756,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1741,7 +1774,8 @@
                             android:id="@+id/tv_nbrPersonne10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -1867,13 +1901,14 @@
                         android:id="@+id/iv_image11"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -1886,6 +1921,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -1903,7 +1939,8 @@
                             android:id="@+id/tv_nbrPersonne11"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -2029,13 +2066,14 @@
                         android:id="@+id/iv_image12"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -2048,6 +2086,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2065,7 +2104,8 @@
                             android:id="@+id/tv_nbrPersonne12"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -2191,13 +2231,14 @@
                         android:id="@+id/iv_image13"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -2210,6 +2251,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2227,7 +2269,8 @@
                             android:id="@+id/tv_nbrPersonne13"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -2353,13 +2396,14 @@
                         android:id="@+id/iv_image14"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -2372,6 +2416,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2389,7 +2434,8 @@
                             android:id="@+id/tv_nbrPersonne14"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -2515,13 +2561,14 @@
                         android:id="@+id/iv_image15"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -2534,6 +2581,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2551,7 +2599,8 @@
                             android:id="@+id/tv_nbrPersonne15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -2677,13 +2726,14 @@
                         android:id="@+id/iv_image16"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -2696,6 +2746,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2713,7 +2764,8 @@
                             android:id="@+id/tv_nbrPersonne16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -2839,13 +2891,14 @@
                         android:id="@+id/iv_image17"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -2858,6 +2911,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -2875,7 +2929,8 @@
                             android:id="@+id/tv_nbrPersonne17"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -3001,13 +3056,14 @@
                         android:id="@+id/iv_image18"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -3020,6 +3076,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -3037,7 +3094,8 @@
                             android:id="@+id/tv_nbrPersonne18"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"
@@ -3163,13 +3221,14 @@
                         android:id="@+id/iv_image19"
                         android:layout_width="0dp"
                         android:layout_height="150dp"
+                        android:layout_marginRight="5dp"
                         android:layout_weight="30"
                         app:srcCompat="@drawable/patescarbonara"
                         android:contentDescription="@string/descriptionImage"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="70">
                         <LinearLayout
@@ -3182,6 +3241,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/titre"
+                                android:textStyle="bold"
                                 android:layout_weight="70"
                                 android:textSize="20sp"
                                 android:gravity="center_horizontal"/>
@@ -3199,7 +3259,8 @@
                             android:id="@+id/tv_nbrPersonne19"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp" />
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"/>
 
                         <LinearLayout
                             android:baselineAligned="false"

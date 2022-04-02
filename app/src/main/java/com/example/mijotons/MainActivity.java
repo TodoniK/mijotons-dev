@@ -294,18 +294,6 @@ public class MainActivity extends AppCompatActivity {
             }
             else
             {
-                /*
-                gridLayoutF.removeAllViews();
-                gridLayoutL.removeAllViews();
-                gridLayoutPL.removeAllViews();
-                gridLayoutV.removeAllViews();
-                gridLayoutA.removeAllViews();
-                ll_legumes.removeAllViews();
-                ll_viandes.removeAllViews();
-                ll_lait.removeAllViews();
-                ll_fruits.removeAllViews();
-                ll_autre.removeAllViews();*/
-
                 intent = new Intent(this, ListeRecette.class);
                 startActivity(intent);
             }

@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Mijotons</string>
-    <string name="course_Bouton_Tout_Select">Tout séléctionner</string>
-    <string name="default_info_title" />
-    <string name="default_info_snippet" />
-    <string name="pick_place" />
+    <string name="course_Bouton_Tout_Select">Tout sélectionner</string>
+    <string name="map_key" translatable="false">
+         AIzaSyAaRJFQACeYU4eyE8TJrsznVjX8XsZg8xA
+    </string>
+
+    <string-array name="carteChoix">
+        <item>Restaurant</item>
+        <item>Supermarché</item>
+    </string-array>
 </resources>

@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/LayoutPrincipal"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Carte">
 
-
-
-
-    <TextView
-        android:id="@+id/tv_nomMenuCarte"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|center_horizontal"
-        android:textColor="@color/white"
+        android:layout_height="35dp"
         android:background="@color/vert"
-        android:textSize="25dp"
-        android:text="Trouver votre restaurant" />
+        >
+        <Spinner
+            android:id="@+id/s_choix"
+            android:textAlignment="center"
+            android:background="@color/vert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/carteChoix"
+            />
+
+    </LinearLayout>
 
 
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <fragment
         android:id="@+id/carte"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_weight="1"
-        tools:context="com.example.currentplacedetailsonmap.MapsActivityCurrentPlace" />
-
-
-
+        map:uiRotateGestures="true"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationBar"

@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +35,7 @@ public class Favoris extends AppCompatActivity {
     EditText et_recherche;
     LinearLayout ll_favoris;
     LinearLayout ll_rien;
+    ScrollView sv_favoris;
 
     static ArrayList<recette> listeFavoris = new ArrayList<>();
     ArrayList<recette> listeFavorisRecherche = new ArrayList<>();
@@ -43,6 +46,7 @@ public class Favoris extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favoris);
 
+        sv_favoris = findViewById(R.id.sv_favoris);
         ll_favoris = findViewById(R.id.ll_favoris);
         ll_rien = findViewById(R.id.ll_rien);
         et_recherche = findViewById(R.id.et_recherche);
@@ -70,6 +74,8 @@ public class Favoris extends AppCompatActivity {
             }
             return true;
         });
+
+        sv_favoris.setOnTouchListener((v, event) -> true);
 
         et_recherche.addTextChangedListener(new TextWatcher() {
             @Override
@@ -167,6 +173,9 @@ public class Favoris extends AppCompatActivity {
                 {
                     remplirFavoris(listeFavoris.get(i),i);
                 }
+                if(listeFavoris.size()>3){
+                    sv_favoris.setOnTouchListener(null);
+                }
             }
         }
         else
@@ -186,6 +195,9 @@ public class Favoris extends AppCompatActivity {
                 {
                     remplirFavoris(listeFavorisRecherche.get(i),i);
                 }
+                if(listeFavoris.size()>3){
+                    sv_favoris.setOnTouchListener(null);
+                }
             }
         }
     }
@@ -198,6 +210,7 @@ public class Favoris extends AppCompatActivity {
             detail_recette.recetteAfficher = recette;
             intent = new Intent(getApplicationContext(), detail_recette.class);
             startActivity(intent);
+            finish();
         });
         iv_image = findViewById(getResources().getIdentifier("iv_image"+ indice,"id",this.getPackageName()));
         iv_image.setImageResource(getResources().getIdentifier(recette.getImage(), "drawable", getPackageName()));
@@ -206,7 +219,7 @@ public class Favoris extends AppCompatActivity {
         tv_temps = findViewById(getResources().getIdentifier("temps"+ indice,"id",this.getPackageName()));
         tv_temps.setText("Temps : "+recette.getTemps());
         tv_nbrPersonne = findViewById(getResources().getIdentifier("tv_nbrPersonne"+ indice,"id",this.getPackageName()));
-        tv_nbrPersonne.setText("Nombre de Personne : "+recette.getNbrPersonne());
+        tv_nbrPersonne.setText("Pour : "+recette.getNbrPersonne());
 
         for(int j = 0 ;j < recette.getAliment().length;j++)
         {
