@@ -4,6 +4,7 @@ import static android.view.Gravity.CENTER_HORIZONTAL;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -164,14 +165,11 @@ public class ListeRecette extends AppCompatActivity {
         if(ll_listeRecette.getChildCount() == 0){
             TextView textView = new TextView(getApplicationContext());
             textView.setText("Aucune recette correspondante à votre recherche!");
+            textView.setGravity(CENTER_HORIZONTAL);
             textView.setTextSize(25);
             ll_listeRecette.addView(textView);
         }
-
-
     }
-
-
 
     public void initListeRecette(){
         //Trouver les recettes qui correspondent au aliment cocher
@@ -243,6 +241,7 @@ public class ListeRecette extends AppCompatActivity {
             }
             TextView textView = new TextView(getApplicationContext());
             textView.setText("Aucune recette correspondante !");
+            textView.setGravity(CENTER_HORIZONTAL);
             textView.setTextSize(25);
             ll_listeRecette.addView(textView);
         }

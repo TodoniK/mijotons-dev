@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +35,7 @@ public class Historique extends AppCompatActivity {
     LinearLayout ll_rien;
     LinearLayout ll_historique;
     EditText et_recherche;
+    ScrollView sv_historique;
 
     static ArrayList<recette> listeHistorique = new ArrayList<>();
     ArrayList<recette> listeHistoriqueRecherche = new ArrayList<>();
@@ -44,6 +46,7 @@ public class Historique extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historique);
 
+        sv_historique = findViewById(R.id.sv_historique);
         ll_historique = findViewById(R.id.ll_historique);
         ll_rien = findViewById(R.id.ll_rien);
         et_recherche = findViewById(R.id.et_recherche);
@@ -71,6 +74,8 @@ public class Historique extends AppCompatActivity {
             }
             return true;
         });
+
+        sv_historique.setOnTouchListener((v, event) -> true);
 
         et_recherche.addTextChangedListener(new TextWatcher() {
             @Override
@@ -163,6 +168,9 @@ public class Historique extends AppCompatActivity {
                 {
                     remplirHistorique(listeHistorique.get(i),i);
                 }
+                if(listeHistorique.size()>3){
+                    sv_historique.setOnTouchListener(null);
+                }
             }
         }
         else
@@ -181,6 +189,9 @@ public class Historique extends AppCompatActivity {
                 for(int i=0;i<listeHistoriqueRecherche.size();i++)
                 {
                     remplirHistorique(listeHistoriqueRecherche.get(i),i);
+                }
+                if(listeHistorique.size()>3){
+                    sv_historique.setOnTouchListener(null);
                 }
             }
         }
@@ -203,7 +214,7 @@ public class Historique extends AppCompatActivity {
         tv_temps = findViewById(getResources().getIdentifier("temps"+ indice,"id",this.getPackageName()));
         tv_temps.setText("Temps : "+recette.getTemps());
         tv_nbrPersonne = findViewById(getResources().getIdentifier("tv_nbrPersonne"+ indice,"id",this.getPackageName()));
-        tv_nbrPersonne.setText("Nombre de Personne : "+recette.getNbrPersonne());
+        tv_nbrPersonne.setText("Pour : "+recette.getNbrPersonne());
 
         for(int j = 0 ;j < recette.getAliment().length;j++)
         {

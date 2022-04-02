@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -256,7 +257,9 @@ public class Courses extends AppCompatActivity {
         initialisationListe();
         for(LinearLayout ll : listeLinearLayout)
         {
-            ll_course.addView(ll);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            layoutParams.setMargins(5,10,5,10);
+            ll_course.addView(ll,layoutParams);
         }
     }
 
@@ -268,11 +271,16 @@ public class Courses extends AppCompatActivity {
         {
             LinearLayout linearLayout = new LinearLayout(getApplicationContext());
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.MATCH_PARENT,0.7f);
+            linearLayout.setBackground(getResources().getDrawable(getResources().getIdentifier("customborder", "drawable", getPackageName())));
             CheckBox checkBox = new CheckBox(getApplicationContext());
             checkBox.setText(listeNom.get(i));
             EditText editText =  new EditText(getApplicationContext());
             editText.setText(String.valueOf(listeQuantite.get(i)));
-            editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+            InputFilter[] filterArray = new InputFilter[1];
+            filterArray[0] = new InputFilter.LengthFilter(4);
+            editText.setInputType(InputType.TYPE_CLASS_NUMBER|InputType.TYPE_NUMBER_FLAG_DECIMAL|InputType.TYPE_NUMBER_FLAG_SIGNED);
+            editText.setFilters(filterArray);
+            editText.setMaxWidth(editText.getWidth());
             editText.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
