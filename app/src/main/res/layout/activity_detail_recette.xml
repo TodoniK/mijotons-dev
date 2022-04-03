@@ -70,7 +70,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
@@ -78,7 +78,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal"
-                    android:paddingTop="20dp"
                     android:text="@string/nomRecetteDetails"
                     android:textColor="@color/black"
                     android:textSize="18sp"
@@ -94,7 +93,7 @@
                     android:paddingTop="15dp"
                     android:text="@string/tempsPreparation"
                     android:textColor="@color/black"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/tv_nombrePersonnes"
@@ -104,7 +103,7 @@
                     android:paddingTop="15dp"
                     android:text="@string/nombreDePersonnes"
                     android:textColor="@color/black"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/tv_ingrediantsManquants"
@@ -114,7 +113,7 @@
                     android:paddingTop="15dp"
                     android:text="@string/ingrediantsManquants"
                     android:textColor="@color/black"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
             <!-- FIN PREMIERE LIGNE-->
@@ -300,7 +299,7 @@
                     android:id="@+id/tv_etapes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center|center_horizontal|end"
+                    android:gravity="center|center_horizontal|start"
                     android:paddingHorizontal="20dp"
                     android:paddingTop="12dp"
                     android:text="@string/etapesRecettes"

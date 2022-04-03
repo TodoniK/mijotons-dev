@@ -127,7 +127,7 @@
 	},
 	"15":{
 		"Nom":"Salade de Pommes de Terre",
-		"Aliments":["Pommes de terre","Tomate cerise","Fromage","Jambon","Persil"],
+		"Aliments":["Patate","Tomate cerise","Fromage","Jambon","Persil"],
 		"Quantite":["2","4","100g","40g","10cl","10g"],
 		"Image":"saladepommedeterre",
 		"Etape":"1.Faire cuire les pommes de terre à l'eau \n2.Couper les tomates cerises, le fromage, le jambon et le persil. Ajouter de l'huile et mélanger \n3. Une fois les pommes de terre cuites, les découper en petit dés et ajouter la mixture.",
@@ -208,7 +208,7 @@
 	},
 	"24":{
 		"Nom":"Tortilla au chorizo",
-		"Aliments":["Pommes de terre","Oeuf","Chorizo","Oignon","Persil"],
+		"Aliments":["Patate","Oeuf","Chorizo","Oignon","Persil"],
 		"Quantite":["4","6","80g","1","10g","10cl"],
 		"Image":"tortillachorizo",
 		"Etape":"1.Eplucher et couper en fines tranches les pommes de terre et l'oignon. \n2. Decouper en petits morceaux le chorizo. \n3. Dans une poele, faire revenir les pommes de terres et les oignons \n4. Fouetter les oeufs et saler poivrer. \n5. Ajouter le chorizo et les oeufs dans la poele. \n6. Faire cuire le tout.",
@@ -235,7 +235,7 @@
 	},
 	"27":{
 		"Nom":"Pommes de terre à la suédoise",
-		"Aliments":["Pomme de terre","Ail","Herbes"],
+		"Aliments":["Patate","Ail","Herbes"],
 		"Quantite":["4","20g","10g"],
 		"Image":"pommesdeterresuedoise",
 		"Etape":"1.Préchauffer le four à 200°C. Dans un ramequin, mélangez l'huile d'olive, l'ail haché, les épices ou herbes aromatiques que vous aimez. \n2. Lavez les pommes de terre, puis entaillez-les sans les couper entièrement, tous les 2 ou 3 millimètres. \n3. Déposez les pommes de terre dans un plat à four. Badigeonnez les pommes de terre avec le mélange d'huile et épices/herbes à l'aide d'un pinceau. \n4. Écartez un peu les lamelles pour y faire pénétrer un peu votre huile, à l'aide d'un couteau. \n5. Salez, poivrez, et placez les pommes de terre au four pendant 30 à 40 minutes, selon le type de pommes de terre. Servir.",
@@ -352,7 +352,7 @@
 	},
 	"40":{
 		"Nom":"Potatoes au four",
-		"Aliments":["Pomme de terre","Ail", "Persil"],
+		"Aliments":["Patate","Ail", "Persil"],
 		"Quantite":["1kg","10g", "10g"],
 		"Image":"potatoesaufour",
 		"Etape":"1. Laver les pommes de terre et les couper dans en deux dans la longueur. \n2. Les poser à plat et couper dans la longueur. \n3. Les placer dans un saladier et ajouter l'assaisonnement (soyez généreux!). \n4. Bien mélanger .Enfourner 40 minutes à 200°C.",
@@ -370,7 +370,7 @@
 	},
 	"42":{
 		"Nom":"Poêlée maison aux saucisses de Francfort",
-		"Aliments":["Pomme de terre","Saucisse", "Oignon"],
+		"Aliments":["Patate","Saucisses", "Oignon"],
 		"Quantite":["150g","1", "1"],
 		"Image":"poelemaisonsaucisse",
 		"Etape":"1. Épluchez les pommes de terre et coupez-les en dés de taille identique. Passez-les sous l'eau chaude et séchez dans un torchon propre. \n2. Faites bouillir une casserole d'eau et faites cuire la saucisse 20 minutes dans une eau frémissante. \n3. Épluchez et émincez l'oignon. \n4. Remplissez le fond de la sauteuse d'huile et faites-la chauffer. Versez les pommes de terre et faites les cuire en remuant très régulièrement durant une trentaine de minutes. \n5. Une fois qu'elles commencent à dorer, ajoutez l'oignon et jetez une petite poignée de gros sel. Mélangez., couvrez et baissez le feu. Ajouter un peu d'huile si le fond colle un peu. \n6. Couper la saucisse de Francfort en demi-rondelles et ajoutez-les dans la poêlée. Mélangez et rectifiez l'assaisonnement si besoin.",
@@ -388,7 +388,7 @@
 	},
 	"44":{
 		"Nom":"Baguette tartiflette",
-		"Aliments":["Pain","Pomme de terre", "Lardon", "Creme fraiche", "Oignon", "Fromage", "Beurre"],
+		"Aliments":["Pain","Patate", "Lardon", "Creme fraiche", "Oignon", "Fromage", "Beurre"],
 		"Quantite":["1","10", "250gr", "200g", "1", "1", "50g"],
 		"Image":"baguettetartiflette",
 		"Etape":"1. Éplucher le pommes de terre, cuire à l'eau salée. \n2. Couper en lamelle les pommes de terre. \n3. Couper les oignons. \n4. Mettre sur feu doux une noix de beurre, y ajouter les oignions émincés avec les lardons. Dès que les lardons son cuits y ajouter la crème fraiche, le sel, le poivre et autres épices si vous le désirez (persil, muscade). \n5. Couper les baguettes en deux horizontalement. Beurrer les baguettes, surtout sur le côté, pour ne pas que ça brûle. \n6.Mettre sur les baguettes : les pommes de terre, puis les lardons avec la sauce et terminer avec un peu de reblochon au dessus de vos baguettes. \n7. Mettre au four pour faire fondre le fromage.",
@@ -397,7 +397,7 @@
 	},
 	"45":{
 		"Nom":"Piémontaise Maison",
-		"Aliments":["Tomates","Pomme de terre", "Oeuf", "Cornichon", "Jambon"],
+		"Aliments":["Tomates","Patate", "Oeuf", "Cornichon", "Jambon"],
 		"Quantite":["200g","300g", "2", "4", "100g"],
 		"Image":"piémontaisemaison",
 		"Etape":"1. On commence par cuir les pommes de terre (départ à l'eau froide) pendant environ 20 à 30 minutes selon la grosseur, Planter un couteau à l'intérieur des pommes de terre, si le couteau entre facilement vos pommes de terre sont cuites \n2. On égoutte les pommes de terre et on les refroidir totalement avant de les éplucher et de les couper en gros dès que l’on réserve dans un grand récipient. \n3. On va couper les cornichons en rondelles et les ajouter au saladier, puis couper les olives vertes en rondelles et ajouter au saladier (attention au doigt). Laver, épépiner, couper les tomates en petits cubes et mettre dans le saladier, même punition pour les dés de jambon. \n4. On va faire durcir les œufs pendant 10 minutes à l'eau bouillante, les mettre dans de l'eau froide quelques minutes, les écaler et les rajouter dans le saladier (ils doivent être totalement froids).",

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static boolean ajoutCourse = false;
     Intent intent;
-    private LinearLayout ll_fruits,ll_legumes,ll_viandes,ll_lait,ll_recherche,ll_menuG,ll_autre;
+    private LinearLayout ll_fruits,ll_legumes,ll_viandes,ll_lait,ll_recherche,ll_menuG,ll_autre,ll_general;
     TextView tv_nomMenuPlacards;
 
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //Navigation
         BottomNavigationView mBottomNavigationView = findViewById(R.id.navigationBar);
 
-        final int nbrColonne = 4;
+        final int nbrColonne = 3;
 
         ll_fruits=findViewById(R.id.ll_fruits);
         ll_legumes=findViewById(R.id.ll_legumes);
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         ll_recherche=findViewById(R.id.ll_recherche);
         ll_menuG=findViewById(R.id.ll_menuG);
         ll_autre=findViewById(R.id.ll_autre);
+        ll_general = findViewById(R.id.ll_general);
 
         Button b_fruits = findViewById(R.id.b_fruits);
         Button b_viandes = findViewById(R.id.b_viandes);
@@ -290,13 +292,12 @@ public class MainActivity extends AppCompatActivity {
             if(ajoutCourse)
             {
                 intent = new Intent(this, Courses.class);
-                startActivity(intent);
             }
             else
             {
                 intent = new Intent(this, ListeRecette.class);
-                startActivity(intent);
             }
+            startActivity(intent);
 
         });
 
