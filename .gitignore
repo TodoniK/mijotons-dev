@@ -1,16 +1,31 @@
+# IntelliJ IDEA specific files
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.idea/
 .DS_Store
-/build
+
+# Gradle specific files
+.gradle
+/build/
+local.properties
+
+# Android specific files
 /captures
 .externalNativeBuild
 .cxx
-local.properties
-.idea
+
+# Log files
+*.log
+
+# OS specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Other
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.sqlite
+*.swp
